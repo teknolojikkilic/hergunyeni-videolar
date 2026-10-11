@@ -1,0 +1,23 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#4ADE80",
+  "source": "Kaynak: Microsoft Destek, Windows'ta Pano",
+  "scenes": [
+    {"type": "hook", "dur": 3.4, "kicker": "Windows İpucu",
+     "lines": ["Eskiden kopyaladığın şeyi", "geri getirebilirsin."]},
+    {"type": "text", "dur": 4.2, "kicker": "Sorun",
+     "title": "Ctrl+C sadece son kopyalananı tutar",
+     "body": "Yeni bir şey kopyaladığında öncekinin üzerine yazılır. Ama Windows'un gizli bir pano geçmişi var."},
+    {"type": "tip", "dur": 4.8, "title": "Tek tuşla geçmişi aç",
+     "bad": "Ctrl+V: sadece son öğe", "good": "Windows + V: son 25 öğe"},
+    {"type": "text", "dur": 4.4, "kicker": "İlk kez mİ?",
+     "title": "Bir kere açman yeterli",
+     "body": "Windows + V'ye bas ve Aç'a dokun. Ya da: Ayarlar > Sistem > Pano > Pano geçmişi."},
+    {"type": "text", "dur": 4.4, "kicker": "Bonus",
+     "title": "Sık kullandığını sabitle",
+     "body": "Öğedeki raptiyeye bas. Sabitlenen öğeler bilgisayar yeniden başlasa da silinmez."},
+    {"type": "cta", "dur": 4.0,
+     "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
