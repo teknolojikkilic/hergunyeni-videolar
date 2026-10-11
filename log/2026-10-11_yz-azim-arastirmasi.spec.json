@@ -1,0 +1,25 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#3DE0FF",
+  "source": "Kaynak: Liu ve ark., arXiv 2604.04721 · CMU, Oxford, MIT, UCLA",
+  "scenes": [
+    {"type": "hook", "dur": 3.4, "kicker": "Yeni araştırma",
+     "lines": ["10 dakika yapay zekâ kullandılar.", "Sonra elinden aldılar."]},
+    {"type": "text", "dur": 4.2, "kicker": "Deney",
+     "title": "1.222 kişi, 3 ayrı deney",
+     "body": "Bir grup matematik ve okuma sorularını yapay zekâ yardımıyla çözdü, diğeri yardımsız. Sonra yapay zekâ kaldırıldı."},
+    {"type": "stat", "dur": 5.2,
+     "title": "Yapay zekâ gidince matematikte çözülen soru oranı",
+     "bars": [{"label": "Hiç kullanmayanlar", "value": 73},
+              {"label": "Yapay zekâ kullananlar", "value": 57, "hi": true}],
+     "note": "Zor soruları atlayıp pes etme de arttı."},
+    {"type": "text", "dur": 4.4, "kicker": "Asıl fark",
+     "title": "Sorun yapay zekâ değil, nasıl kullandığın",
+     "body": "Düşüş, cevabı direkt isteyenlerde görüldü. İpucu için kullananlarda görülmedi."},
+    {"type": "tip", "dur": 4.8, "title": "Yapay zekâyı böyle kullan",
+     "bad": "“Cevabı ver.”", "good": "“İpucu ver, ben çözeyim.”"},
+    {"type": "cta", "dur": 4.0,
+     "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
