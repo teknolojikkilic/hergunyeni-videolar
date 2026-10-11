@@ -1,0 +1,26 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#8B7BFF",
+  "source": "Kaynak: OpenAI Yardım Merkezi (Temporary Chat)",
+  "scenes": [
+    {"type": "hook", "dur": 3.4, "kicker": "ChatGPT İpucu",
+     "lines": ["ChatGPT'nin de", "gizli sekmesi var."]},
+    {"type": "text", "dur": 4.2, "kicker": "Geçici Sohbet",
+     "title": "Sohbet geçmişine düşmez",
+     "body": "Kaydetmediğin sürece geçmişte görünmez. Sayfadan çıkınca bir daha açamazsın."},
+    {"type": "text", "dur": 4.4, "kicker": "Hafıza ve eğitim",
+     "title": "Hafızana hiçbir şey yazılmaz",
+     "body": "Geçici kaldığı sürece yeni anı oluşturmaz ve modelleri geliştirmek için kullanılmaz."},
+    {"type": "tip", "dur": 4.6, "title": "Ne zaman kullanmalı?",
+     "bad": "Her denemeyi normal sohbete yazmak", "good": "Denemeleri ve tek seferlik soruları geçici sohbete sor"},
+    {"type": "text", "dur": 4.6, "kicker": "Nasıl açılır?",
+     "title": "Yeni sohbet aç, Geçici'yi seç",
+     "body": "İlk mesajdan önce kişiselleştirilmiş ya da kişiselleştirilmemiş seçeneğini belirle. Sohbet başlayınca değişmez."},
+    {"type": "text", "dur": 4.6, "kicker": "Bilmen gereken",
+     "title": "Tamamen izsiz değil",
+     "body": "OpenAI güvenlik amacıyla bir kopyasını 30 güne kadar saklayabilir. Çok gizli bilgileri yine paylaşma."},
+    {"type": "cta", "dur": 4.0,
+     "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
