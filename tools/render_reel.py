@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Yazı + animasyonlu dikey Reel üretici (1080x1920, 30fps, H.264).
 
-Kullanım: python3 render_reel.py spec.json cikti.mp4
+Kullanım:
+  Reel:    python3 render_reel.py spec.json cikti.mp4
+  Karusel: python3 render_reel.py --carousel spec.json cikti_oneki   (-> cikti_oneki_1.jpg, _2.jpg ...; 1080x1350)
 
 spec.json:
 {
@@ -212,10 +214,39 @@ def scene_cta(L, sc, t, ac):
 RENDER = {"hook": scene_hook, "text": scene_text, "stat": scene_stat, "tip": scene_tip, "cta": scene_cta}
 
 
+class Ctx:
+    def __init__(self, spec):
+        self.spec = spec
+        self.ac = hexrgb(spec.get("accent", "#3DE0FF"))
+        self.bg, self.glow = background(self.ac)
+        self.brand_f = font("bold", 34)
+        self.src_f = font("reg", 30)
+
+
+def draw_frame(ctx, sc, t, progress, glow_t, fade=1.0):
+    """Tek kare: arka plan + marka şeridi + ilerleme + sahne + kaynak satırı (1080x1920 RGBA)."""
+    ac = ctx.ac
+    frame = ctx.bg.copy()
+    gx = int(540 + 260 * math.sin(glow_t * 0.6)) - 450
+    gy = int(900 + 300 * math.cos(glow_t * 0.45)) - 450
+    frame.alpha_composite(ctx.glow, (gx, gy))
+    fd = ImageDraw.Draw(frame)
+    fd.text((X0, 230), ctx.spec.get("brand", ""), font=ctx.brand_f, fill=ac + (255,))
+    fd.rounded_rectangle([X0, 285, X1, 293], 4, fill=(34, 42, 74, 255))
+    fd.rounded_rectangle([X0, 285, X0 + int((X1 - X0) * progress), 293], 4, fill=ac + (255,))
+    L = Layer()
+    RENDER[sc["type"]](L, sc, t, ac)
+    if fade < 1:
+        L.img.putalpha(L.img.getchannel("A").point(lambda v: int(v * fade)))
+    frame.alpha_composite(L.img)
+    if ctx.spec.get("source"):
+        ImageDraw.Draw(frame).text((X0, BOTTOM + 20), ctx.spec["source"], font=ctx.src_f, fill=(120, 130, 160, 255))
+    return frame
+
+
 def main(spec_path, out_path):
     spec = json.load(open(spec_path, encoding="utf-8"))
-    ac = hexrgb(spec.get("accent", "#3DE0FF"))
-    bg, glow = background(ac)
+    ctx = Ctx(spec)
     scenes = spec["scenes"]
     total = sum(s["dur"] for s in scenes)
     nframes = int(total * FPS)
@@ -227,34 +258,17 @@ def main(spec_path, out_path):
     proc = subprocess.Popen(
         ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
          "-r", str(FPS), "-i", "-", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
-         "-shortest", "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
-         "-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", out_path],
+         "-shortest", "-c:v", "libx264", "-preset", "medium", "-crf", "23", "-pix_fmt", "yuv420p",
+         "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", out_path],
         stdin=subprocess.PIPE)
 
-    brand_f = font("bold", 34)
-    src_f = font("reg", 30)
     for n in range(nframes):
         tg = n / FPS
         idx = max(i for i in range(len(scenes)) if starts[i] <= tg)
         sc, t = scenes[idx], tg - starts[idx]
-        frame = bg.copy()
-        gx = int(540 + 260 * math.sin(tg * 0.6)) - 450
-        gy = int(900 + 300 * math.cos(tg * 0.45)) - 450
-        frame.alpha_composite(glow, (gx, gy))
-        fd = ImageDraw.Draw(frame)
-        # marka şeridi + ilerleme çubuğu (üstte)
-        fd.text((X0, 230), spec.get("brand", ""), font=brand_f, fill=ac + (255,))
-        fd.rounded_rectangle([X0, 285, X1, 293], 4, fill=(34, 42, 74, 255))
-        fd.rounded_rectangle([X0, 285, X0 + int((X1 - X0) * tg / total), 293], 4, fill=ac + (255,))
-        L = Layer()
-        RENDER[sc["type"]](L, sc, t, ac)
         # sahne çıkışı: son 0.25 sn kararma
         fade = min(1.0, (sc["dur"] - t) / 0.25) if idx < len(scenes) - 1 else 1.0
-        if fade < 1:
-            L.img.putalpha(L.img.getchannel("A").point(lambda v: int(v * fade)))
-        frame.alpha_composite(L.img)
-        if spec.get("source"):
-            ImageDraw.Draw(frame).text((X0, BOTTOM + 20), spec["source"], font=src_f, fill=(120, 130, 160, 255))
+        frame = draw_frame(ctx, sc, t, tg / total, tg, fade)
         proc.stdin.write(frame.convert("RGB").tobytes())
     proc.stdin.close()
     proc.wait()
@@ -262,5 +276,28 @@ def main(spec_path, out_path):
         sys.exit(proc.returncode)
 
 
+def carousel(spec_path, out_prefix):
+    """Aynı spec'ten 1080x1350 karusel görselleri üretir: <out_prefix>_1.jpg, _2.jpg ..."""
+    spec = json.load(open(spec_path, encoding="utf-8"))
+    ctx = Ctx(spec)
+    scenes = spec["scenes"]
+    n = len(scenes)
+    hint_f = font("semi", 38)
+    paths = []
+    for i, sc in enumerate(scenes):
+        frame = draw_frame(ctx, sc, 99.0, (i + 1) / n, 2.0 + i * 1.7)
+        if i < n - 1:
+            ImageDraw.Draw(frame).text((X1, 1400), "Kaydır  →", font=hint_f, fill=ctx.ac + (255,), anchor="ra")
+        # 1920 yükseklikten 4:5 kırp: marka şeridi üstte, kaynak satırı altta kalır
+        img = frame.convert("RGB").crop((0, 150, W, 1500))
+        p = f"{out_prefix}_{i + 1}.jpg"
+        img.save(p, quality=92)
+        paths.append(p)
+    print("\n".join(paths))
+
+
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    if len(sys.argv) == 4 and sys.argv[1] == "--carousel":
+        carousel(sys.argv[2], sys.argv[3])
+    else:
+        main(sys.argv[1], sys.argv[2])
