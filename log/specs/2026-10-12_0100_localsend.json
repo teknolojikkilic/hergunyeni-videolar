@@ -1,0 +1,23 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FFB547",
+  "source": "Kaynak: F-Droid, TechSpot (LocalSend)",
+  "scenes": [
+    {"type": "hook", "dur": 3.4, "kicker": "Ücretsiz Uygulama",
+     "lines": ["Telefondan bilgisayara", "kablosuz dosya at."]},
+    {"type": "text", "dur": 4.4, "kicker": "Sorun",
+     "title": "AirDrop sadece Apple'da çalışır",
+     "body": "Android'den Windows'a ya da iPhone'dan Linux'a dosya atmak için çoğu kişi kendine mesaj ya da e-posta gönderir."},
+    {"type": "text", "dur": 4.6, "kicker": "Çözüm: LocalSend",
+     "title": "Her cihazda çalışan AirDrop",
+     "body": "Windows, macOS, Linux, Android ve iOS. Ücretsiz, açık kaynak, reklamsız. Hesap açman gerekmiyor."},
+    {"type": "tip", "dur": 4.8, "title": "İnternet bile gerekmez",
+     "bad": "Buluta yükle, sonra indir", "good": "Aynı Wi-Fi'da doğrudan cihazdan cihaza"},
+    {"type": "text", "dur": 4.6, "kicker": "Nasıl kullanılır?",
+     "title": "İki cihazda da uygulamayı aç",
+     "body": "Dosyayı seç, listede beliren cihaza dokun. Aktarım HTTPS ile şifrelenir; istersen PIN de koyabilirsin."},
+    {"type": "cta", "dur": 4.0,
+     "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
