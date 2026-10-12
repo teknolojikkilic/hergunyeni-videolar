@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#8B7BFF",
+  "source": "Kaynak: napkin.ai (resmi site), Ekim 2026",
+  "music": "enerjik",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🤖", "kicker": "Günün Yapay Zekâ Aracı", "lines": ["Yazını yapıştır,", "şemaya dönüşsün"]},
+    {"type": "repo", "dur": 4.0, "title": "Günün Yapay Zekâ Aracı", "name": "Napkin AI / napkin.ai", "desc": "Metni saniyeler içinde infografik, diyagram ve şemaya çevirir.", "badge": "Ücretsiz plan var", "tags": ["Web", "60+ dil"]},
+    {"type": "list", "dur": 4.0, "kicker": "Neler yapabiliyor?", "title": "Prompt yazmadan görsel", "items": ["İnfografik ve akış şeması", "Zihin haritası", "Veri grafikleri", "Sunum slaytları (beta)"]},
+    {"type": "text", "dur": 3.6, "emoji": "🎁", "kicker": "Ücretsiz planda", "title": "Haftada 500 yapay zekâ kredisi", "body": "PNG ve PDF indirme sınırsız. Görsellerde Napkin logosu kalır."},
+    {"type": "tip", "dur": 4.0, "title": "Nasıl kullanılır?", "bad": "Uzun paragrafı slayta yapıştırmak", "good": "Metni Napkin'e ver, görseli seç, indir"},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
