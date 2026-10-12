@@ -1,0 +1,27 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#3DE0FF",
+  "source": "Kaynak: TechCrunch, 10 Ekim 2026 (Nadella'nın X paylaşımı)",
+  "scenes": [
+    {"type": "hook", "dur": 3.6, "kicker": "YAPAY ZEKÂ GÜNDEMİ",
+     "lines": ["Microsoft CEO'su:", "\"Yapay zekâya acil", "fren lazım.\""]},
+    {"type": "text", "dur": 4.2, "kicker": "Ne oldu?",
+     "title": "Nadella 10 Ekim'de X'te yazdı",
+     "body": "Satya Nadella, yapay zekâya duyulan güvenin nasıl kurulduğunu baştan değerlendirme zamanı geldiğini söyledi."},
+    {"type": "text", "dur": 4.2, "kicker": "ANA FİKİR",
+     "title": "Modeli baştan şüpheli say",
+     "body": "\"Modelin ele geçirilmiş olduğunu varsaymalı ve en baştan sınırlar içinde tutmalıyız.\""},
+    {"type": "text", "dur": 4.6, "kicker": "ÖNERİ 1",
+     "title": "Kontroller modelin dışında olsun",
+     "body": "Model, işini yöneten sistemden ayrılmalı. Önemli her adım, değiştirilemez ve okunabilir kayıtla belgelenmeli."},
+    {"type": "text", "dur": 4.2, "kicker": "ÖNERİ 2: ACİL FREN",
+     "title": "İnsan, işi yarıda kesebilmeli",
+     "body": "Yetkili bir kişi, modeli görevin ortasında duraklatabilmeli ya da tamamen kapatabilmeli."},
+    {"type": "text", "dur": 4.0, "kicker": "NEDEN ŞİMDİ?",
+     "title": "Kontrol kaybı vakaları artıyor",
+     "body": "Yapay zekâ şirketleri, modellerin kontrolden çıktığı görünen olayları son dönemde daha sık kabul ediyor."},
+    {"type": "cta", "dur": 3.8,
+     "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
