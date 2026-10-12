@@ -1,0 +1,59 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FFB547",
+  "source": "Kaynak: Apple Pil Sayfası; Battery University BU-808",
+  "music": "gizem",
+  "scenes": [
+    {
+      "type": "hook",
+      "dur": 2.8,
+      "emoji": "🔋",
+      "kicker": "YANLIŞ BİLİNEN",
+      "lines": [
+        "Şarjı sıfıra indirmek",
+        "pili yıpratıyor"
+      ]
+    },
+    {
+      "type": "myth",
+      "dur": 3.8,
+      "myth": "Telefonu %0'a kadar bitir, sonra şarj et.",
+      "fact": "Lityum-iyon pilde gerek yok. Apple: istediğin zaman şarj et."
+    },
+    {
+      "type": "text",
+      "dur": 3.5,
+      "emoji": "🕰️",
+      "kicker": "BU KURAL NEREDEN?",
+      "title": "Eski Nikel-Kadmiyum pillerden",
+      "body": "Hafıza etkisi onlarda vardı. Modern lityum pillerde hafıza etkisi yok."
+    },
+    {
+      "type": "list",
+      "dur": 4.3,
+      "kicker": "TAHMİNİ ÖMÜR (NMC HÜCRE)",
+      "title": "Az boşalt, çok yaşasın",
+      "items": [
+        "%100 boşaltma: ~300 döngü",
+        "%40 boşaltma: ~1000 döngü",
+        "%20 boşaltma: ~2000 döngü"
+      ]
+    },
+    {
+      "type": "tip",
+      "dur": 3.8,
+      "title": "Pil dostu alışkanlık",
+      "bad": "Sıfıra kadar bekle",
+      "good": "Ara ara şarj et"
+    },
+    {
+      "type": "cta",
+      "dur": 2.8,
+      "lines": [
+        "İşine yaradıysa kaydet.",
+        "Her gün yenisi için takip et."
+      ],
+      "sub": "@hergunyeni_teknoloji"
+    }
+  ]
+}
