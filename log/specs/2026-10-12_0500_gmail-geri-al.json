@@ -1,0 +1,23 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#4ADE80",
+  "source": "Kaynak: Google Gmail Yardım ve Google Blog",
+  "scenes": [
+    {"type": "hook", "dur": 3.4, "kicker": "Gmail İpucu",
+     "lines": ["Yanlış kişiye mail mi attın?", "Geri çekebilirsin."]},
+    {"type": "text", "dur": 4.2, "kicker": "Gönderimi geri al",
+     "title": "Gönder'den sonra hemen bak",
+     "body": "Bilgisayarda sol altta \"İleti gönderildi\" çıkar. Yanındaki Geri al'a bas, mail taslağa döner."},
+    {"type": "text", "dur": 4.2, "kicker": "Telefonda da var",
+     "title": "Gmail uygulamasında aynı",
+     "body": "Gönder'e dokunduktan sonra altta beliren Geri al'a dokun. Mail düzenlenebilir hâle gelir."},
+    {"type": "tip", "dur": 4.8, "title": "Süreyi uzat",
+     "bad": "Varsayılan: sadece 5 saniye", "good": "Ayarla: 30 saniyeye kadar"},
+    {"type": "text", "dur": 4.6, "kicker": "Nasıl?",
+     "title": "Bilgisayardan bir kez ayarla",
+     "body": "Ayarlar > Tüm ayarları göster > Gönderimi geri al: 5, 10, 20 veya 30 sn seç. En altta Kaydet."},
+    {"type": "cta", "dur": 4.0,
+     "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
