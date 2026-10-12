@@ -1,0 +1,15 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#8B7BFF",
+  "source": "Kaynak: GitHub proje sayfaları (Ekim 2026)",
+  "music": "none",
+  "scenes": [
+    {"type": "hook", "dur": 4, "emoji": "🚀", "kicker": "ÜCRETSİZ VE AÇIK KAYNAK", "lines": ["Bilmen gereken", "5 GitHub projesi", "5.'si evine kendi Netflix'ini kurduruyor"]},
+    {"type": "repo", "dur": 4, "title": "1 · Yapay zekâyı kendi bilgisayarında çalıştır", "name": "ollama/ollama", "desc": "Gemma, Qwen, DeepSeek gibi açık modelleri tek komutla indirip bilgisayarında çalıştırır.", "stars": "170 bin+", "tags": ["Yerel YZ", "MIT"]},
+    {"type": "repo", "dur": 4, "title": "2 · El çizimi tarzı dijital beyaz tahta", "name": "excalidraw/excalidraw", "desc": "Tarayıcıda şema ve fikir çiz, linkle birlikte çalış. Ortak çizimler uçtan uca şifreli.", "stars": "130 bin+", "tags": ["Web", "MIT"]},
+    {"type": "repo", "dur": 4, "title": "3 · Kendi Google Fotoğraflar'ın", "name": "immich-app/immich", "desc": "Telefondan otomatik yedekleme, yüz tanıma ve 'sahilde köpek' gibi aramalar; hepsi kendi sunucunda.", "stars": "100 bin+", "tags": ["Kendi sunucun", "AGPL-3.0"]},
+    {"type": "repo", "dur": 4, "title": "4 · PDF'lerini siteye yükleme", "name": "Stirling-Tools/Stirling-PDF", "desc": "Birleştir, böl, imzala, sıkıştır, OCR yap: 50+ PDF aracı kendi bilgisayarında.", "stars": "90 bin+", "tags": ["PDF", "Docker"]},
+    {"type": "repo", "dur": 4, "title": "5 · Evine kendi Netflix'ini kur", "name": "jellyfin/jellyfin", "desc": "Film, dizi ve müzik arşivini her cihaza yayınla. Abonelik yok, ücretli sürüm yok.", "stars": "55 bin+", "tags": ["Medya sunucusu", "GPL-2.0"]},
+    {"type": "cta", "dur": 4, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
