@@ -1,0 +1,13 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#8B7BFF",
+  "source": "Kaynak: OpenAI, Temmuz 2023; Ars Technica, Temmuz 2023",
+  "music": "enerjik",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "📜", "kicker": "YAPAY ZEKÂ", "lines": ["Dedektöre göre", "Anayasayı yapay zekâ yazmış"]},
+    {"type": "text", "dur": 3.6, "emoji": "🤖", "kicker": "GERÇEK OLAY", "title": "ABD Anayasası “yapay zekâ” çıktı", "body": "GPTZero, 1787'de yazılan metnin bir bölümüne “büyük ihtimalle yapay zekâ yazdı” dedi."},
+    {"type": "text", "dur": 3.6, "emoji": "🧠", "kicker": "NEDEN?", "title": "Fazla tanıdık metin", "body": "Anayasa eğitim verisinde çok geçiyor. Model onu tahmin edilebilir bulunca “yapay” sanıyor."},
+    {"type": "stat", "dur": 4.2, "title": "OpenAI'ın kendi dedektörü", "bars": [{"label": "Yakalanan yapay zekâ metni", "value": 26, "hi": true}, {"label": "Yanlışlıkla suçlanan insan metni", "value": 9}], "note": "Düşük doğruluk yüzünden 2023'te kapatıldı."},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
