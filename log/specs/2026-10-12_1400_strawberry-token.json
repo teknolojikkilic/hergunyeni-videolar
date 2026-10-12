@@ -1,0 +1,61 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#8B7BFF",
+  "source": "Kaynak: OpenAI tiktoken (GPT-4 / GPT-4o), Ekim 2026",
+  "music": "enerjik",
+  "scenes": [
+    {
+      "type": "hook",
+      "dur": 2.8,
+      "emoji": "🍓",
+      "kicker": "YAPAY ZEKÂ",
+      "lines": [
+        "Yapay zekâ harfleri",
+        "aslında göremiyor"
+      ]
+    },
+    {
+      "type": "text",
+      "dur": 3.6,
+      "emoji": "🤖",
+      "kicker": "ÜNLÜ SORU",
+      "title": "“strawberry”de kaç tane r var?",
+      "body": "Cevap 3. Ama birçok model uzun süre 2 dedi. Sebebi zekâ değil, okuma şekli."
+    },
+    {
+      "type": "text",
+      "dur": 3.8,
+      "emoji": "🧩",
+      "kicker": "TOKEN NEDİR?",
+      "title": "str | aw | berry",
+      "body": "GPT-4 kelimeyi harf harf değil, bu 3 parça hâlinde görür. Parçaların içindeki harfleri saymak zorlaşır."
+    },
+    {
+      "type": "list",
+      "dur": 4.0,
+      "kicker": "BONUS",
+      "title": "“Merhaba dünya, nasılsın?”",
+      "items": [
+        "Türkçesi: 9 token",
+        "İngilizcesi: 7 token",
+        "Türkçe genelde daha çok harcar"
+      ]
+    },
+    {
+      "type": "tip",
+      "dur": 3.8,
+      "title": "Harf saydıracaksan",
+      "bad": "“Kaç tane r var?”",
+      "good": "“Önce harf harf yaz, sonra say.”"
+    },
+    {
+      "type": "cta",
+      "dur": 2.8,
+      "lines": [
+        "İşine yaradıysa kaydet.",
+        "Her gün yenisi için takip et."
+      ],
+      "sub": "@hergunyeni_teknoloji"
+    }
+  ]
+}
