@@ -1,0 +1,13 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FFB547",
+  "source": "@hergunyeni_teknoloji",
+  "music": "enerjik",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🎁", "kicker": "Dev kampanya", "lines": ["Yapay zekâ rehberi", "ücretsiz sende."]},
+    {"type": "list", "dur": 4.4, "kicker": "PDF'te neler var?", "title": "Tek dosyada hepsi:", "items": ["En iyi yapay zekâ araçları", "Hazır prompt şablonları", "Ücretsiz uygulamalar", "Güvenlik ve gizlilik ipuçları"]},
+    {"type": "text", "dur": 3.6, "emoji": "📩", "kicker": "Nasıl alırım?", "title": "Takip et, DM'den \"PDF\" yaz", "body": "Rehberi sana mesajla gönderelim."},
+    {"type": "text", "dur": 3.2, "emoji": "⏳", "kicker": "Acele et", "title": "Sadece ilk 20 kişiye", "body": "Kontenjan dolunca kampanya biter."},
+    {"type": "cta", "dur": 3.2, "lines": ["Takip et.", "DM'den \"PDF\" yaz."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}

@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>Yapay Zekâ ve Teknoloji Araçları Rehberi — @hergunyeni_teknoloji</title>
+<style>
+@font-face { font-family: "Inter"; font-weight: 400; src: url("file:///usr/share/fonts/opentype/inter/Inter-Regular.otf"); }
+@font-face { font-family: "Inter"; font-weight: 500; src: url("file:///usr/share/fonts/opentype/inter/Inter-Medium.otf"); }
+@font-face { font-family: "Inter"; font-weight: 600; src: url("file:///usr/share/fonts/opentype/inter/Inter-SemiBold.otf"); }
+@font-face { font-family: "Inter"; font-weight: 700; src: url("file:///usr/share/fonts/opentype/inter/Inter-Bold.otf"); }
+@font-face { font-family: "InterDisplay"; font-weight: 800; src: url("file:///usr/share/fonts/opentype/inter/InterDisplay-ExtraBold.otf"); }
+@font-face { font-family: "InterDisplay"; font-weight: 900; src: url("file:///usr/share/fonts/opentype/inter/InterDisplay-Black.otf"); }
+@page { size: A4; margin: 0; }
+:root {
+  --ink: #0F1424; --muted: #5A6380; --line: #E3E6EF; --bg: #FFFFFF; --soft: #F4F6FB;
+  --navy: #0A0E1C; --cyan: #3DE0FF; --gold: #FFB547; --pink: #FF6B9D; --green: #2FBF71; --violet: #8B7BFF;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink);
+  font-family: "Inter", "Noto Color Emoji", sans-serif; font-size: 10.4pt; line-height: 1.45; }
+.page { width: 210mm; height: 297mm; padding: 18mm 17mm 16mm; position: relative; overflow: hidden; page-break-after: always; }
+.page:last-child { page-break-after: auto; }
+.foot { position: absolute; left: 17mm; right: 17mm; bottom: 9mm; display: flex; justify-content: space-between;
+  font-size: 8pt; color: var(--muted); border-top: 1px solid var(--line); padding-top: 3mm; }
+h1, h2, h3 { font-family: "InterDisplay", "Inter", sans-serif; margin: 0; }
+h2 { font-size: 22pt; font-weight: 900; letter-spacing: -0.3px; margin-bottom: 2mm; }
+.kicker { font-weight: 700; font-size: 8.5pt; letter-spacing: 1.2px; text-transform: uppercase; color: var(--accent, #E89A1C); margin-bottom: 2mm; }
+.lead { color: var(--muted); font-size: 10.6pt; margin: 0 0 6mm; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+.card { border: 1px solid var(--line); border-radius: 4mm; padding: 4mm 4.5mm; background: #fff; break-inside: avoid; }
+.card h3 { font-family: "Inter"; font-weight: 700; font-size: 11.5pt; display: flex; align-items: baseline; gap: 2mm; flex-wrap: wrap; }
+.card .url { font-weight: 500; font-size: 8.3pt; color: var(--muted); }
+.card p { margin: 1.5mm 0 2mm; }
+.tags { display: flex; flex-wrap: wrap; gap: 1.5mm; }
+.tag { font-size: 7.8pt; font-weight: 600; padding: 0.6mm 2.2mm; border-radius: 10mm; background: var(--soft); color: #39415C; }
+.tag.free { background: #E3F8EC; color: #157A45; }
+.tag.part { background: #FFF2DD; color: #9A5B00; }
+.tag.oss { background: #ECEAFF; color: #4B3FC0; }
+.note { background: var(--soft); border-radius: 4mm; padding: 3.5mm 4.5mm; font-size: 9.4pt; color: #39415C; margin-top: 5mm; }
+.note b { color: var(--ink); }
+.prompt { border-left: 3px solid var(--accent, #E89A1C); background: var(--soft); border-radius: 0 3mm 3mm 0; padding: 3mm 4mm; margin-bottom: 3mm; break-inside: avoid; }
+.prompt .t { font-weight: 700; font-size: 9.6pt; margin-bottom: 1mm; }
+.prompt .p { font-size: 9.4pt; color: #24304F; }
+ul.clean { margin: 0; padding-left: 4.5mm; }
+ul.clean li { margin-bottom: 1.6mm; }
+.myth { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--line); border-radius: 4mm; overflow: hidden; margin-bottom: 2.6mm; break-inside: avoid; }
+.myth div { padding: 2.6mm 4mm; }
+.myth .m { background: #FFF0F4; }
+.myth .m b { color: #C42A5C; }
+.myth .f b { color: #157A45; }
+.kbd { font-family: "DejaVu Sans Mono", monospace; font-size: 8.8pt; background: #EEF1F8; border: 1px solid #D5DAE7; border-bottom-width: 2px; border-radius: 1.5mm; padding: 0.2mm 1.6mm; white-space: nowrap; }
+table.sc { width: 100%; border-collapse: collapse; }
+table.sc td { padding: 2.6mm 2mm; border-bottom: 1px solid var(--line); vertical-align: top; }
+table.sc td:first-child { width: 47%; }
+table.sc.tight td { padding: 1.8mm 2mm; }
+.stat { display: flex; gap: 4mm; margin: 3mm 0 1mm; }
+.stat div { flex: 1; border-radius: 3mm; padding: 3mm 4mm; background: var(--soft); }
+.stat b { font-family: "InterDisplay"; font-weight: 900; font-size: 20pt; display: block; }
+/* kapak */
+.cover { background: var(--navy); color: #fff; padding: 22mm 18mm; }
+.cover .grid-bg { position: absolute; inset: 0;
+  background-image: linear-gradient(#18203A 1px, transparent 1px), linear-gradient(90deg, #18203A 1px, transparent 1px);
+  background-size: 12mm 12mm; opacity: .9; }
+.cover .glow { position: absolute; width: 150mm; height: 150mm; border-radius: 50%; right: -40mm; top: 70mm;
+  background: radial-gradient(circle, rgba(255,181,71,.38), rgba(255,181,71,0) 65%); }
+.cover .glow2 { position: absolute; width: 130mm; height: 130mm; border-radius: 50%; left: -50mm; bottom: -30mm;
+  background: radial-gradient(circle, rgba(61,224,255,.28), rgba(61,224,255,0) 65%); }
+.cover .inner { position: relative; height: 100%; display: flex; flex-direction: column; }
+.cover .brand { color: var(--gold); font-weight: 700; letter-spacing: 1.5px; font-size: 10pt; }
+.cover .bar { height: 2px; background: var(--gold); width: 60mm; margin: 3mm 0 0; }
+.cover h1 { font-weight: 900; font-size: 46pt; line-height: 1.02; letter-spacing: -1px; margin-top: 52mm; }
+.cover h1 span { color: var(--gold); }
+.cover .sub { font-size: 14pt; color: #C9D0E6; margin-top: 7mm; max-width: 150mm; }
+.cover .chips { display: flex; flex-wrap: wrap; gap: 3mm; margin-top: 10mm; }
+.cover .chips span { border: 1px solid #3A4466; border-radius: 10mm; padding: 1.8mm 4.5mm; font-weight: 600; font-size: 10pt; color: #E6EAF5; }
+.cover .bottom { margin-top: auto; display: flex; justify-content: space-between; align-items: flex-end; color: #9AA3C2; font-size: 9.5pt; }
+.cover .bottom b { color: #fff; font-size: 12pt; }
+.toc { list-style: none; padding: 0; margin: 4mm 0 0; counter-reset: s; }
+.toc li { display: flex; justify-content: space-between; padding: 3mm 0; border-bottom: 1px dashed var(--line); font-weight: 600; font-size: 11pt; }
+.toc li span:first-child::before { counter-increment: s; content: counter(s, decimal-leading-zero) "  "; color: #E89A1C; font-family: "InterDisplay"; font-weight: 900; }
+.toc li span:last-child { color: var(--muted); font-weight: 500; }
+.back { background: var(--navy); color: #fff; display: flex; flex-direction: column; justify-content: center; }
+.back h2 { color: #fff; font-size: 30pt; }
+.back p { color: #C9D0E6; font-size: 12pt; max-width: 140mm; }
+.back .handle { margin-top: 8mm; display: inline-block; background: var(--gold); color: #1A1204; font-weight: 800; font-size: 16pt; padding: 3mm 7mm; border-radius: 10mm; }
+</style>
+</head>
+<body>
+
+<!-- KAPAK -->
+<section class="page cover">
+  <div class="grid-bg"></div><div class="glow"></div><div class="glow2"></div>
+  <div class="inner">
+    <div class="brand">HER GÜN YENİ TEKNOLOJİ</div>
+    <div class="bar"></div>
+    <h1>Yapay Zekâ ve<br>Teknoloji Araçları<br><span>Rehberi</span></h1>
+    <div class="sub">27 işe yarar araç, kopyala-yapıştır prompt şablonları, güvenlik ipuçları ve yanlış bilinenler. Hepsi tek dosyada.</div>
+    <div class="chips"><span>🤖 Yapay zekâ araçları</span><span>✍️ Hazır promptlar</span><span>🧰 Ücretsiz uygulamalar</span><span>🔐 Güvenlik</span></div>
+    <div class="bottom"><div><b>@hergunyeni_teknoloji</b><br>Instagram</div><div>Ekim 2026</div></div>
+  </div>
+</section>
+
+<!-- İÇİNDEKİLER -->
+<section class="page" style="--accent:#E89A1C">
+  <div class="kicker">İçindekiler</div>
+  <h2>Bu rehberde neler var?</h2>
+  <ol class="toc">
+    <li><span>Yapay zekâ asistanları: hangisi ne işe yarar?</span><span>3</span></li>
+    <li><span>Görsel üretme ve tasarım</span><span>4</span></li>
+    <li><span>Video, ses ve müzik</span><span>5</span></li>
+    <li><span>Öğrenme, sunum ve çeviri</span><span>6</span></li>
+    <li><span>Kod yazmadan uygulama, kendi bilgisayarında yapay zekâ</span><span>6</span></li>
+    <li><span>Ücretsiz ve açık kaynak süper uygulamalar</span><span>7</span></li>
+    <li><span>Kopyala-yapıştır prompt şablonları</span><span>8</span></li>
+    <li><span>Yapay zekâyı doğru kullanmak</span><span>9</span></li>
+    <li><span>Güvenlik ve gizlilik</span><span>10</span></li>
+    <li><span>Yanlış bilinenler ve hız kazandıran kısayollar</span><span>11</span></li>
+  </ol>
+  <div class="note" style="margin-top:9mm"><b>Bu rehberi nasıl kullanmalısın?</b><br>
+  Her araç için ne işe yaradığını, ücretsiz kullanılıp kullanılamadığını ve adresini yazdık. Etiketler:
+  <span class="tag free">Ücretsiz</span> tamamen ücretsiz,
+  <span class="tag part">Ücretsiz plan var</span> sınırlı ücretsiz kullanım + ücretli paketler,
+  <span class="tag oss">Açık kaynak</span> kodu herkese açık, bilgisayarına kurup kullanırsın.</div>
+  <div class="note"><b>Önemli:</b> Ücretsiz planların sınırları sık değişir. Bu rehberdeki bilgiler 12 Ekim 2026 itibarıyla derlendi. Ücretli bir şeye karar vermeden önce aracın kendi sitesinden güncel durumu kontrol et. Rehberde hiçbir markayla iş birliği yoktur.</div>
+  <div class="foot"><span>@hergunyeni_teknoloji</span><span>2</span></div>
+</section>
+
+<!-- 1 ASİSTANLAR -->
+<section class="page" style="--accent:#1AA9C9">
+  <div class="kicker">01 · Asistanlar</div>
+  <h2>Yapay zekâ asistanları</h2>
+  <p class="lead">Hepsiyle Türkçe yazışabilirsin ve hepsinin ücretsiz sürümü var. Fark, neyde daha iyi oldukları.</p>
+  <div class="grid">
+    <div class="card"><h3>💬 ChatGPT <span class="url">chatgpt.com</span></h3>
+      <p>Her işe yarayan genel asistan: yazı, fikir, özet, görsel, ödev planı. En çok kullanılan seçenek.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Yoğun kullanımda hafif modele geçer</span></div></div>
+    <div class="card"><h3>✨ Gemini <span class="url">gemini.google.com</span></h3>
+      <p>Google'ın asistanı. Gmail, Drive ve Dokümanlar'la iç içe çalışır; Google hesabın varsa hazır.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Google hesabı</span></div></div>
+    <div class="card"><h3>📝 Claude <span class="url">claude.ai</span></h3>
+      <p>Uzun belgeler, raporlar ve kodda güçlü. Az düzeltme isteyen, doğal yazılar için iyi bir seçim.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Kullanım sınırlı</span></div></div>
+    <div class="card"><h3>🪟 Microsoft Copilot <span class="url">copilot.microsoft.com</span></h3>
+      <p>Microsoft'un asistanı. Word, Excel, Outlook kullanıyorsan oralarda işini hızlandırır.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Office özellikleri ücretli</span></div></div>
+    <div class="card"><h3>🔎 Perplexity <span class="url">perplexity.ai</span></h3>
+      <p>Araştırma için. Her cevabın altında kaynak linklerini gösterir, sen de tıklayıp doğrularsın.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Kaynaklı cevap</span></div></div>
+    <div class="card" style="background:var(--soft)"><h3>🧭 Hangisini seçeyim?</h3>
+      <ul class="clean">
+        <li><b>Genel iş:</b> ChatGPT</li>
+        <li><b>Google'da yaşıyorsan:</b> Gemini</li>
+        <li><b>Uzun metin, yazı, kod:</b> Claude</li>
+        <li><b>Office'te çalışıyorsan:</b> Copilot</li>
+        <li><b>Kaynak lazımsa:</b> Perplexity</li>
+      </ul></div>
+  </div>
+  <div class="note"><b>İpucu:</b> Aynı soruyu iki farklı asistana sor. Cevaplar çelişiyorsa o konuyu mutlaka bir kaynaktan kontrol et.</div>
+  <div class="foot"><span>Yapay Zekâ ve Teknoloji Araçları Rehberi</span><span>3</span></div>
+</section>
+
+<!-- 2 GÖRSEL -->
+<section class="page" style="--accent:#7B6BF0">
+  <div class="kicker">02 · Görsel</div>
+  <h2>Görsel üretme ve tasarım</h2>
+  <p class="lead">Yazdığını resme dönüştüren, tasarımı hızlandıran ve fotoğrafını netleştiren araçlar.</p>
+  <div class="grid">
+    <div class="card"><h3>🎨 Canva <span class="url">canva.com</span></h3>
+      <p>Hazır şablonlarla gönderi, sunum ve afiş. Yapay zekâ özellikleriyle yazıdan görsel ve tasarım üretir.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Yapay zekâ kullanımı aylık sınırlı</span></div></div>
+    <div class="card"><h3>🔥 Adobe Firefly <span class="url">firefly.adobe.com</span></h3>
+      <p>Adobe'nin görsel üreticisi. Yazıdan görsel, görseli genişletme ve düzenleme.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Aylık ücretsiz kredi</span></div></div>
+    <div class="card"><h3>🔤 Ideogram <span class="url">ideogram.ai</span></h3>
+      <p>Görselin içine yazı koymakta başarılı: afiş, logo taslağı, kapak, davetiye.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Günlük ücretsiz hak</span></div></div>
+    <div class="card"><h3>🖼️ Leonardo.ai <span class="url">leonardo.ai</span></h3>
+      <p>Farklı stil ve modellerle görsel üretimi; oyun, illüstrasyon ve konsept çizimleri için sevilir.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Günlük ücretsiz token</span></div></div>
+    <div class="card"><h3>🔍 Upscayl <span class="url">upscayl.org</span></h3>
+      <p>Bulanık ya da küçük fotoğrafları yapay zekâyla büyütüp netleştirir. Bilgisayarında, internete yüklemeden çalışır.</p>
+      <div class="tags"><span class="tag free">Ücretsiz</span><span class="tag oss">Açık kaynak</span><span class="tag">Windows · Mac · Linux</span></div></div>
+    <div class="card" style="background:var(--soft)"><h3>💡 İyi görsel promptu</h3>
+      <p style="margin-bottom:0"><b>Ne</b> (konu) + <b>nerede</b> (sahne) + <b>ışık</b> + <b>açı</b> + <b>stil</b>.<br><i>Örnek:</i> "Yağmurlu İstanbul sokağında kırmızı şemsiyeli kedi, gece neon ışıkları, alçak açı, sinematik fotoğraf."</p></div>
+  </div>
+  <div class="note"><b>Dikkat:</b> Gerçek kişilerin yüzüyle sahte görsel üretmek ve bunu paylaşmak hem etik değil hem de hukuki sorun doğurabilir. Ücretsiz planlarda ticari kullanım koşulları araçtan araca değişir; satış yapacaksan şartları oku.</div>
+  <div class="foot"><span>Yapay Zekâ ve Teknoloji Araçları Rehberi</span><span>4</span></div>
+</section>
+
+<!-- 3 VİDEO SES -->
+<section class="page" style="--accent:#E0457B">
+  <div class="kicker">03 · Video ve ses</div>
+  <h2>Video, ses ve müzik</h2>
+  <p class="lead">Altyazı, seslendirme, gürültü temizleme, şarkı üretme ve konuşmayı yazıya dökme.</p>
+  <div class="grid">
+    <div class="card"><h3>🎬 CapCut <span class="url">capcut.com</span></h3>
+      <p>Telefonda ve bilgisayarda video düzenleme; otomatik altyazı ve hazır şablonlar. Reels/TikTok için popüler.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Bazı özellikler Pro</span></div></div>
+    <div class="card"><h3>✂️ Descript <span class="url">descript.com</span></h3>
+      <p>Videoyu metin gibi düzenlersin: yazıdaki kelimeyi silince videodan da silinir. Dolgu kelimelerini temizler.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Ücretsizde filigran var</span></div></div>
+    <div class="card"><h3>🗣️ ElevenLabs <span class="url">elevenlabs.io</span></h3>
+      <p>Yazıyı çok gerçekçi sese çevirir, Türkçe dahil. Seslendirme ve anlatım için.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Ayda ~10 dk</span><span class="tag">Ücretsizde ticari kullanım yok</span></div></div>
+    <div class="card"><h3>🎵 Suno <span class="url">suno.com</span></h3>
+      <p>Tarif ettiğin şarkıyı sözleri ve vokaliyle üretir. Doğum günü şarkısı, şaka şarkılar, denemeler.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Günde ~10 şarkı</span><span class="tag">Ücretsizde ticari kullanım yok</span></div></div>
+    <div class="card"><h3>🎙️ Adobe Podcast Enhance <span class="url">podcast.adobe.com/enhance</span></h3>
+      <p>Telefonla kaydettiğin sesteki gürültü ve yankıyı temizler, stüdyo kaydı gibi yapar. Tarayıcıdan çalışır.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Kayıt yükle, indir</span></div></div>
+    <div class="card"><h3>⌨️ Buzz <span class="url">github.com/chidiwilliams/buzz</span></h3>
+      <p>Ses ve videodaki konuşmayı yazıya döker, çevirir. Bilgisayarında internetsiz çalışır, kayıtların dışarı çıkmaz.</p>
+      <div class="tags"><span class="tag free">Ücretsiz</span><span class="tag oss">Açık kaynak</span><span class="tag">Whisper tabanlı</span></div></div>
+  </div>
+  <div class="note"><b>Dikkat:</b> Başkasının sesini izinsiz klonlamak yasal ve etik sorun doğurur. Kendi sesin ya da hazır sesler dışında ses klonlama kullanma.</div>
+  <div class="foot"><span>Yapay Zekâ ve Teknoloji Araçları Rehberi</span><span>5</span></div>
+</section>
+
+<!-- 4-5 ÖĞRENME + KOD -->
+<section class="page" style="--accent:#1E9E5A">
+  <div class="kicker">04 · Öğrenme ve çalışma</div>
+  <h2>Öğrenme, sunum ve çeviri</h2>
+  <p class="lead" style="margin-bottom:4mm">Ders, iş ve proje için zaman kazandıranlar.</p>
+  <div class="grid">
+    <div class="card"><h3>📚 NotebookLM <span class="url">notebooklm.google.com</span></h3>
+      <p>PDF, web sayfası ve YouTube videolarını yükle; sadece senin kaynaklarına dayanarak özetler, soruları cevaplar, podcast tarzı sesli özet hazırlar (80+ dil).</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Google hesabı</span></div></div>
+    <div class="card"><h3>🖥️ Gamma <span class="url">gamma.app</span></h3>
+      <p>Konuyu yaz, dakikalar içinde tasarımlı sunum çıksın. Sonra başlıkları ve görselleri düzenle.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Başlangıçta 400 kredi</span><span class="tag">Gamma rozeti</span></div></div>
+    <div class="card"><h3>🌍 DeepL <span class="url">deepl.com</span></h3>
+      <p>Doğal sonuç veren çeviri. Türkçe dahil; metin ve belge çevirisi.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Web · Masaüstü · Mobil</span></div></div>
+    <div class="card" style="background:var(--soft)"><h3>🎯 Ders çalışırken</h3>
+      <p style="margin-bottom:0">Sınav notlarını NotebookLM'e yükle, "Bu kaynaklardan bana 10 soruluk test hazırla" de. Cevapları kendin ver, sonra kontrol ettir.</p></div>
+  </div>
+  <div class="kicker" style="margin-top:7mm">05 · Uygulama ve kod</div>
+  <h2 style="font-size:18pt">Kod yazmadan uygulama, kendi bilgisayarında yapay zekâ</h2>
+  <div class="grid" style="margin-top:4mm">
+    <div class="card"><h3>💜 Lovable <span class="url">lovable.dev</span></h3>
+      <p>"Bana randevu alma sitesi yap" yaz, çalışan web uygulaması çıksın. Kod bilmeden prototip için.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Günlük kredi</span><span class="tag">Ücretsizde projeler herkese açık</span></div></div>
+    <div class="card"><h3>🐙 GitHub Copilot <span class="url">github.com/features/copilot</span></h3>
+      <p>Kod yazarken satırları tamamlayan, kodu açıklayan asistan. VS Code ile çalışır.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag">Ayda 2.000 tamamlama</span></div></div>
+    <div class="card"><h3>🦙 Ollama <span class="url">ollama.com</span></h3>
+      <p>Açık yapay zekâ modellerini kendi bilgisayarında, internetsiz çalıştırır. Verilerin bilgisayarından çıkmaz.</p>
+      <div class="tags"><span class="tag free">Ücretsiz</span><span class="tag oss">Açık kaynak</span><span class="tag">Güçlü bilgisayar ister</span></div></div>
+    <div class="card"><h3>🧪 LM Studio <span class="url">lmstudio.ai</span></h3>
+      <p>Aynı işi pencereli, kolay bir arayüzle yapar: model indir, sohbet et. Kod bilgisi gerekmez.</p>
+      <div class="tags"><span class="tag free">Ücretsiz</span><span class="tag">Windows · Mac · Linux</span></div></div>
+  </div>
+  <div class="foot"><span>Yapay Zekâ ve Teknoloji Araçları Rehberi</span><span>6</span></div>
+</section>
+
+<!-- 6 AÇIK KAYNAK -->
+<section class="page" style="--accent:#5A4FD6">
+  <div class="kicker">06 · Ücretsiz uygulamalar</div>
+  <h2>Ücretsiz ve açık kaynak süper uygulamalar</h2>
+  <p class="lead">Reklamsız, abonelik istemeyen ve gerçekten işe yarayan araçlar.</p>
+  <div class="grid">
+    <div class="card"><h3>📲 LocalSend <span class="url">localsend.org</span></h3>
+      <p>Telefondan bilgisayara (ve tersine) kablosuz dosya at. Windows, Mac, Linux, Android ve iOS'ta çalışır; hesap ve internet gerekmez, aynı Wi-Fi yeter.</p>
+      <div class="tags"><span class="tag free">Ücretsiz</span><span class="tag oss">Açık kaynak</span></div></div>
+    <div class="card"><h3>🧰 Microsoft PowerToys <span class="url">learn.microsoft.com/windows/powertoys</span></h3>
+      <p>Windows'a süper güçler ekler. En sevileni Text Extractor: <span class="kbd">Win</span>+<span class="kbd">Shift</span>+<span class="kbd">T</span> ile ekrandaki, resimdeki yazıyı kopyala.</p>
+      <div class="tags"><span class="tag free">Ücretsiz</span><span class="tag oss">Açık kaynak</span></div></div>
+    <div class="card"><h3>🎥 OBS Studio <span class="url">obsproject.com</span></h3>
+      <p>Ekran kaydı ve canlı yayın için profesyonel araç. Ders anlatımı, oyun videosu, sunum kaydı.</p>
+      <div class="tags"><span class="tag free">Ücretsiz</span><span class="tag oss">Açık kaynak</span></div></div>
+    <div class="card"><h3>🔑 Bitwarden <span class="url">bitwarden.com</span></h3>
+      <p>Şifre yöneticisi: tüm şifrelerini tek ana şifreyle saklar, her site için güçlü şifre üretir. Telefon ve bilgisayarda senkron.</p>
+      <div class="tags"><span class="tag part">Ücretsiz plan var</span><span class="tag oss">Açık kaynak</span></div></div>
+  </div>
+  <div class="note" style="margin-top:6mm"><b>Neden açık kaynak?</b> Kodu herkese açık olduğu için binlerce geliştirici inceleyebilir. Çoğu ücretsizdir ve reklamsızdır. İndirirken sadece resmi sitesinden ya da projenin GitHub sayfasından indir; "crack" ya da kopya siteler zararlı yazılım taşıyabilir.</div>
+  <div class="note"><b>Bonus:</b> GitHub'daki ilginç projeleri her hafta Instagram'da paylaşıyoruz. Takipte kal: <b>@hergunyeni_teknoloji</b></div>
+  <div class="foot"><span>Yapay Zekâ ve Teknoloji Araçları Rehberi</span><span>7</span></div>
+</section>
+
+<!-- 7 PROMPTLAR -->
+<section class="page" style="--accent:#E89A1C">
+  <div class="kicker">07 · Promptlar</div>
+  <h2>Kopyala-yapıştır prompt şablonları</h2>
+  <p class="lead" style="margin-bottom:4mm">Altın formül: <b>Rol</b> + <b>Bağlam</b> + <b>Görev</b> + <b>Format</b> + <b>Örnek</b>. [Köşeli parantez] içini kendine göre doldur.</p>
+  <div class="grid" style="gap:0 4mm">
+    <div>
+      <div class="prompt"><div class="t">1 · Zor bir konuyu anla</div><div class="p">"Bana [konu]'yu 12 yaşındaki birine anlatır gibi anlat. Sonra anlayıp anlamadığımı 3 soruyla test et."</div></div>
+      <div class="prompt"><div class="t">2 · Ödevi kendin çöz</div><div class="p">"Bu soruyu benim yerime çözme. Sadece bir sonraki adım için ipucu ver: [soru]"</div></div>
+      <div class="prompt"><div class="t">3 · Hızlı özet</div><div class="p">"Aşağıdaki metni 5 maddede özetle, her madde en fazla 15 kelime olsun. Sonda tek cümlelik ana fikri yaz. Metin: [metin]"</div></div>
+      <div class="prompt"><div class="t">4 · E-posta</div><div class="p">"[Kime]'ye [amaç] için kısa, kibar ama net bir e-posta yaz. 120 kelimeyi geçmesin, 2 konu satırı öner."</div></div>
+      <div class="prompt"><div class="t">5 · Sunum taslağı</div><div class="p">"[Konu] hakkında 8 slaytlık sunum taslağı çıkar: her slayt için başlık, 3 madde ve konuşmacı notu."</div></div>
+      <div class="prompt"><div class="t">6 · Karar ver</div><div class="p">"[A] ile [B] arasında kararsızım. Kriterlerim: [fiyat, kalite, ...]. Tablo halinde karşılaştır ve hangisini neden önerdiğini yaz."</div></div>
+    </div>
+    <div>
+      <div class="prompt"><div class="t">7 · Çalışma planı</div><div class="p">"[Hedef] için 4 haftalık, günde 30 dakikalık bir plan hazırla. Tablo olsun, her haftanın sonunda küçük bir test olsun."</div></div>
+      <div class="prompt"><div class="t">8 · CV'yi ilana uydur</div><div class="p">"Bu iş ilanına göre CV'mi güncelle. İlandaki anahtar kelimeleri dürüstçe kullan, olmayan deneyim ekleme. İlan: [ilan] CV: [cv]"</div></div>
+      <div class="prompt"><div class="t">9 · Sosyal medya kancası</div><div class="p">"[Konu] hakkında Reels için 5 farklı açılış cümlesi yaz. Her biri en fazla 8 kelime olsun ve merak uyandırsın."</div></div>
+      <div class="prompt"><div class="t">10 · Görsel promptu</div><div class="p">"Görsel üretici için İngilizce prompt yaz: [sahne]. Işığı, kamera açısını, stili ve renkleri belirt."</div></div>
+      <div class="prompt"><div class="t">11 · Yazım düzeltme</div><div class="p">"Bu metindeki yazım ve anlatım hatalarını düzelt. Değiştirdiğin yerleri ayrıca listele: [metin]"</div></div>
+      <div class="prompt"><div class="t">12 · Cevabı sorgula</div><div class="p">"Bu cevabındaki iddiaları tek tek listele. Hangilerinden emin olmadığını ve nasıl doğrulayabileceğimi yaz."</div></div>
+    </div>
+  </div>
+  <div class="foot"><span>Yapay Zekâ ve Teknoloji Araçları Rehberi</span><span>8</span></div>
+</section>
+
+<!-- 8 DOĞRU KULLANIM -->
+<section class="page" style="--accent:#1AA9C9">
+  <div class="kicker">08 · Doğru kullanım</div>
+  <h2>Yapay zekâyı doğru kullanmak</h2>
+  <p class="lead">Yapay zekâ çok güçlü ama yanılabilir. Bu 5 kural seni korur.</p>
+  <div class="card" style="margin-bottom:4mm"><h3>1 · Her söylediğine körü körüne güvenme</h3>
+    <p style="margin-bottom:0">Yapay zekâ bazen kendinden emin bir şekilde yanlış bilgi uydurabilir (buna "halüsinasyon" denir). Sağlık, para, hukuk ve ödev kaynakları gibi önemli konularda bilgiyi mutlaka güvenilir bir kaynaktan kontrol et. Kaynak iste ve linke tıklayıp gerçekten öyle yazıyor mu bak.</p></div>
+  <div class="card" style="margin-bottom:4mm"><h3>2 · Cevabı değil, ipucunu iste</h3>
+    <p>CMU, Oxford, MIT ve UCLA'dan araştırmacıların 1.222 kişiyle yaptığı deneylerde, yaklaşık 10 dakika yapay zekâ yardımı alan kişiler yapay zekâ kaldırılınca daha az soru çözdü ve zor soruları daha sık atladı.</p>
+    <div class="stat"><div><b>%73</b>Yapay zekâ kullanmayanların çözdüğü sorular (matematik)</div><div style="background:#FFF0F4"><b style="color:#C42A5C">%57</b>Yapay zekâ kullanmış olanların, yapay zekâ kaldırılınca çözdüğü sorular</div></div>
+    <p style="margin-bottom:0">Düşüş, yapay zekâdan cevabı direkt isteyenlerde görüldü; ipucu isteyenlerde görülmedi. <i>Kaynak: Liu ve ark., arXiv:2604.04721</i></p></div>
+  <div class="card" style="margin-bottom:4mm"><h3>3 · Kişisel ve gizli bilgi verme</h3>
+    <p style="margin-bottom:0">TC kimlik numarası, şifre, kart bilgisi, sağlık raporu ya da iş yerinin gizli belgelerini sohbet botlarına yapıştırma. ChatGPT'de iz bırakmak istemediğin konular için <b>Geçici Sohbet</b>'i kullanabilirsin: sohbet geçmişinde görünmez ve hafızaya yazılmaz (OpenAI yine de güvenlik için 30 güne kadar bir kopyasını saklayabilir).</p></div>
+  <div class="grid">
+    <div class="card"><h3>4 · Net ol</h3><p style="margin-bottom:0">"Kısa yaz" yerine "3 cümle yaz". Kime, ne amaçla, hangi formatta istediğini söyle.</p></div>
+    <div class="card"><h3>5 · Son sözü sen söyle</h3><p style="margin-bottom:0">Çıktıyı olduğu gibi gönderme. Oku, düzelt, kendi üslubunu kat. Sorumluluk sende.</p></div>
+  </div>
+  <div class="foot"><span>Yapay Zekâ ve Teknoloji Araçları Rehberi</span><span>9</span></div>
+</section>
+
+<!-- 9 GÜVENLİK -->
+<section class="page" style="--accent:#1E9E5A">
+  <div class="kicker">09 · Güvenlik</div>
+  <h2>Güvenlik ve gizlilik</h2>
+  <p class="lead">Hesabının çalınmasını ve dolandırılmayı önleyen 8 basit alışkanlık.</p>
+  <table class="sc">
+    <tr><td><b>🔐 İki adımlı doğrulamayı aç</b></td><td>Instagram, Gmail, WhatsApp ve bankada. Şifren çalınsa bile ikinci adım olmadan giremezler.</td></tr>
+    <tr><td><b>🔑 Her yerde farklı şifre</b></td><td>Hepsini aklında tutamazsın, bunun için şifre yöneticisi (ör. Bitwarden) kullan.</td></tr>
+    <tr><td><b>📧 Sızıntı kontrolü</b></td><td><b>haveibeenpwned.com</b>'a e-postanı yaz, bilinen veri sızıntılarında geçiyor mu gör. Geçiyorsa o şifreyi değiştir.</td></tr>
+    <tr><td><b>🎣 Linklere dikkat</b></td><td>"Hesabınız kapanacak", "kargonuz bekliyor", "ödül kazandınız" mesajlarındaki linklere tıklama. Uygulamayı ya da siteyi kendin açıp kontrol et.</td></tr>
+    <tr><td><b>📞 Sahte ses ve video</b></td><td>Yapay zekâyla bir yakınının sesi taklit edilebilir. Para isteyen acil aramalarda kapatıp kişiyi kendin geri ara. Ailecek bir "parola kelime" belirleyin.</td></tr>
+    <tr><td><b>📲 Uygulamayı resmi mağazadan indir</b></td><td>"Ücretsiz Pro sürüm", "crack" ve APK siteleri zararlı yazılımın en sık kaynağı.</td></tr>
+    <tr><td><b>🔄 Güncellemeleri erteleme</b></td><td>Güncellemeler çoğu zaman güvenlik açıklarını kapatır.</td></tr>
+    <tr><td><b>👀 Paylaşmadan önce düşün</b></td><td>Okul, ev adresi, uçak bileti barkodu ve kimlik fotoğrafını hikâyede bile paylaşma.</td></tr>
+  </table>
+  <div class="note" style="margin-top:6mm"><b>Ebeveynler için:</b> 10 Ekim 2026 tarihli Resmî Gazete'de yayımlanan düzenlemeyle 1 Kasım 2026'dan itibaren 15 yaş altındaki çocuklar Türkiye'de sosyal ağlara hesap açamayacak. Yaş, e-Devlet üzerinden doğrulanacak; mevcut hesapların 31 Mart 2027'ye kadar doğrulanması gerekiyor. 15-18 yaş arasındaki hesaplar varsayılan olarak gizli olacak, canlı yayın ve kişiselleştirilmiş reklam olmayacak.</div>
+  <div class="foot"><span>Yapay Zekâ ve Teknoloji Araçları Rehberi</span><span>10</span></div>
+</section>
+
+<!-- 10 YANLIŞ BİLİNENLER + KISAYOL -->
+<section class="page" style="--accent:#E0457B">
+  <div class="kicker">10 · Yanlış bilinenler</div>
+  <h2>Yanlış bilinenler</h2>
+  <p class="lead" style="margin-bottom:4mm">Çoğumuzun doğru sandığı 4 teknoloji efsanesi.</p>
+  <div class="myth"><div class="m"><b>YANLIŞ</b><br>"Gizli sekmede kimse ne yaptığımı göremez."</div><div class="f"><b>DOĞRUSU</b><br>Gizli sekme sadece o cihazda geçmiş ve çerez tutmaz. Ziyaret ettiğin siteler, okul/iş ağı ve internet sağlayıcın görmeye devam eder.</div></div>
+  <div class="myth"><div class="m"><b>YANLIŞ</b><br>"Yapay zekâ her zaman doğru bilgi verir."</div><div class="f"><b>DOĞRUSU</b><br>Kendinden emin bir dille yanlış bilgi uydurabilir. Önemli konularda kaynağını iste ve kontrol et.</div></div>
+  <div class="myth"><div class="m"><b>YANLIŞ</b><br>"Mac'lere virüs bulaşmaz."</div><div class="f"><b>DOĞRUSU</b><br>Daha az hedef olsa da Mac'ler için de zararlı yazılımlar var. Apple bu yüzden sisteme kötü amaçlı yazılım korumaları koyuyor. Bilinmeyen kaynaktan program kurma.</div></div>
+  <div class="myth"><div class="m"><b>YANLIŞ</b><br>"Telefonun şarjını %0'a kadar bitirip sonra doldurmalısın."</div><div class="f"><b>DOĞRUSU</b><br>Bu, eski tip piller içindi. Günümüz telefonlarındaki lityum iyon pillerin tamamen boşaltılmaya ihtiyacı yoktur; ara ara şarj etmek sorun değildir.</div></div>
+  <div class="kicker" style="margin-top:6mm">Bonus</div>
+  <h2 style="font-size:17pt">Hız kazandıran kısayollar</h2>
+  <table class="sc tight" style="margin-top:2mm">
+    <tr><td><span class="kbd">Win</span> + <span class="kbd">V</span></td><td>Windows pano geçmişi: daha önce kopyaladıklarını geri getir.</td></tr>
+    <tr><td><span class="kbd">Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">T</span></td><td>Chrome'da yanlışlıkla kapattığın sekmeyi geri aç (Mac'te <span class="kbd">Cmd</span> + <span class="kbd">Shift</span> + <span class="kbd">T</span>).</td></tr>
+    <tr><td><span class="kbd">Win</span> + <span class="kbd">Shift</span> + <span class="kbd">T</span></td><td>PowerToys Text Extractor: resimdeki yazıyı kopyala.</td></tr>
+    <tr><td><span class="kbd">Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">N</span></td><td>Chrome'da gizli pencere aç.</td></tr>
+    <tr><td>Gmail → Ayarlar → Gönderimi geri al</td><td>Yanlış giden maili geri çekme süresini 5 saniyeden 30 saniyeye çıkar.</td></tr>
+  </table>
+  <div class="foot"><span>Yapay Zekâ ve Teknoloji Araçları Rehberi</span><span>11</span></div>
+</section>
+
+<!-- ARKA KAPAK -->
+<section class="page back" style="padding:22mm 20mm">
+  <div class="kicker" style="color:var(--gold)">Teşekkürler</div>
+  <h2>Bu rehber işine yaradıysa…</h2>
+  <p>Her gün yeni yapay zekâ araçları, ilginç GitHub projeleri, yanlış bilinen teknoloji gerçekleri ve gündemden haberler paylaşıyoruz.</p>
+  <p>Rehberi faydalı bulacak bir arkadaşına göndermeyi unutma. 💛</p>
+  <div><span class="handle">@hergunyeni_teknoloji</span></div>
+  <p style="font-size:9pt;color:#8790B0;margin-top:16mm">Bu rehber 12 Ekim 2026 itibarıyla hazırlandı. Araçların özellikleri ve ücretsiz plan sınırları değişebilir; güncel bilgi için aracın kendi sitesini kontrol et. Anılan marka adları sahiplerine aittir; rehberde hiçbir markayla iş birliği yoktur.</p>
+</section>
+
+</body>
+</html>
