@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FFB547",
+  "source": "Kaynak: Smithsonian Ulusal Amerikan Tarihi Müzesi",
+  "music": "gizem",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🐛", "kicker": "BUNU BİLİYOR MUYDUN?", "lines": ["Yazılım hatasına neden", "\"böcek\" deniyor?"]},
+    {"type": "text", "dur": 3.6, "emoji": "🖥️", "kicker": "1947, HARVARD", "title": "Bilgisayarda gerçek bir güve", "body": "Mark II bilgisayarının parçaları arasında sıkışmış bir güve bulundu."},
+    {"type": "text", "dur": 3.6, "emoji": "📓", "kicker": "DEFTERE YAPIŞTIRDILAR", "title": "\"İlk gerçek böcek vakası\"", "body": "Mühendisler güveyi kayıt defterine bantladı. Defter bugün Smithsonian koleksiyonunda."},
+    {"type": "myth", "dur": 4.0, "myth": "\"Bug\" kelimesi bu güveyle doğdu.", "fact": "Edison 1870'lerde devre arızalarına zaten \"bug\" diyordu."},
+    {"type": "text", "dur": 3.4, "emoji": "💡", "kicker": "ASIL ETKİSİ", "title": "Terimi ünlü yaptı", "body": "Ekipteki Grace Hopper ve arkadaşları \"bug\" ve \"debug\" sözcüklerini yaygınlaştırdı."},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
