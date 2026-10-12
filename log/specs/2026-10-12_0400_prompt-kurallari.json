@@ -1,0 +1,25 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#8B7BFF",
+  "source": "Kaynak: OpenAI Yardım Merkezi, Prompt yazma rehberi",
+  "scenes": [
+    {"type": "hook", "dur": 3.4, "kicker": "Yapay Zekâ İpucu",
+     "lines": ["OpenAI'ın kendi rehberinden:", "Daha iyi cevap için 5 kural."]},
+    {"type": "tip", "dur": 4.6, "title": "1. Muğlak değil, net ol",
+     "bad": "Birkaç cümlelik kısa bir açıklama yaz", "good": "3-5 cümlelik bir paragraf yaz"},
+    {"type": "text", "dur": 4.4, "kicker": "2. Ayrıntı ver",
+     "title": "Bağlam, uzunluk, format, üslup",
+     "body": "Ne istediğini, kimin için olduğunu ve nasıl görünmesi gerektiğini açıkça yaz."},
+    {"type": "text", "dur": 4.4, "kicker": "3. Talimat en başta",
+     "title": "Metni talimattan ayır",
+     "body": "Önce ne yapılacağını yaz. Sonra metni \"\"\" ya da ### arasına koy."},
+    {"type": "tip", "dur": 4.6, "title": "4. Yasak değil, yön ver",
+     "bad": "ŞİFRE SORMA!", "good": "Kullanıcıyı yardım sayfasına yönlendir"},
+    {"type": "text", "dur": 4.2, "kicker": "5. Örnek göster",
+     "title": "Formatı örnekle anlat",
+     "body": "İstediğin çıktının bir örneğini ver; model aynı kalıbı izler."},
+    {"type": "cta", "dur": 4.0,
+     "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
