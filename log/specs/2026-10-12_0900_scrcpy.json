@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#4ADE80",
+  "source": "Kaynak: github.com/Genymobile/scrcpy, Ekim 2026",
+  "music": "enerjik",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "📱", "kicker": "İlginç GitHub", "lines": ["Telefonunu bilgisayardan", "fareyle kullan"]},
+    {"type": "repo", "dur": 4.0, "title": "Bu da mı varmış?", "name": "Genymobile/scrcpy", "desc": "Android ekranını Windows, Mac ya da Linux bilgisayara yansıtır; klavye ve fareyle kontrol ettirir.", "stars": "150 bin+", "tags": ["Ücretsiz", "Açık kaynak"]},
+    {"type": "list", "dur": 4.0, "kicker": "Neden bu kadar sevildi?", "title": "Telefona hiçbir şey kurulmaz", "items": ["Root gerekmez", "USB ya da Wi-Fi ile", "30-120 fps görüntü", "35-70 ms gecikme"]},
+    {"type": "text", "dur": 3.5, "emoji": "🎧", "kicker": "Bonus", "title": "Sesi ve kamerayı da taşır", "body": "Android 11 ve üstünde ses, Android 12 ve üstünde kamera bilgisayara aktarılır."},
+    {"type": "tip", "dur": 3.5, "title": "Başlamadan önce", "bad": "Rastgele sitelerden indirmek", "good": "Sadece resmi GitHub sayfası + USB hata ayıklamayı aç"},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
