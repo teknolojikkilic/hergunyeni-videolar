@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FFB547",
+  "source": "Kaynak: Samsung Newsroom (2023); BGR / PetaPixel, Apple (2023)",
+  "music": "gizem",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "📸", "kicker": "YANLIŞ BİLİNEN", "lines": ["Çok megapiksel", "iyi fotoğraf demek değil"]},
+    {"type": "myth", "dur": 3.8, "myth": "200 MP kamera, 50 MP kameradan 4 kat iyi çeker.", "fact": "Megapiksel sadece piksel sayısı. Kaliteyi ışığı toplama belirler."},
+    {"type": "text", "dur": 3.8, "emoji": "🔬", "kicker": "SAMSUNG 200 MP SENSÖR", "title": "Her piksel sadece 0,6 mikron", "body": "Karanlıkta 16 pikseli birleştirip 12,5 MP fotoğraf üretiyor."},
+    {"type": "list", "dur": 4.0, "kicker": "IPHONE 15'TE DE AYNISI", "title": "48 MP sensör, 24 MP fotoğraf", "items": ["Varsayılan çekim: 24 MP", "48 MP için ayar açılmalı", "Apple: dinamik aralık daha iyi"]},
+    {"type": "tip", "dur": 3.6, "title": "Telefon seçerken", "bad": "Sadece megapiksel", "good": "Gece çekilmiş örneklere bakmak"},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
