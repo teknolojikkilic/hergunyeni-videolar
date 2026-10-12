@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FF6B9D",
+  "source": "Kaynak: Resmî Gazete 10.10.2026 (33396), Webtekno, Ekotürk",
+  "music": "enerjik",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "📵", "kicker": "Resmî Gazete'de", "lines": ["15 yaş altına", "sosyal medya yasak."]},
+    {"type": "text", "dur": 3.6, "emoji": "⏰", "kicker": "Ne zaman?", "title": "1 Kasım 2026'da başlıyor", "body": "Türkiye'den erişilen yerli ve yabancı tüm sosyal ağlar, 15 yaş altına hesap açamayacak."},
+    {"type": "text", "dur": 3.6, "emoji": "🪪", "kicker": "Yaş nasıl doğrulanacak?", "title": "e-Devlet üzerinden", "body": "Platforma sadece 15 ve 18 yaşın geçilip geçilmediği gider. Ad, soyad gibi bilgiler gitmez."},
+    {"type": "text", "dur": 3.4, "emoji": "⏳", "kicker": "Mevcut hesaplar", "title": "31 Mart 2027'ye kadar doğrulama", "body": "Doğrulanmayan ya da 15 yaş altına ait çıkan hesaplar kapatılacak."},
+    {"type": "list", "dur": 4.2, "kicker": "15-18 yaş için", "title": "Hesaplarda yeni kurallar", "items": ["Profil varsayılan gizli", "Canlı yayın yok", "Kişiselleştirilmiş reklam yok", "Sadece takip edilenlerle mesaj"]},
+    {"type": "cta", "dur": 3.0, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}

@@ -286,7 +286,7 @@ def scene_text(L, sc, t, ac):
     d = ImageDraw.Draw(L.img)
     y = 520
     if sc.get("emoji"):
-        put_emoji(L, sc["emoji"], X0, 330, 130, t)
+        put_emoji(L, sc["emoji"], X0, 375, 120, t)
     if sc.get("kicker"):
         L.text((X0, y), sc["kicker"].upper(), font("bold", 40), ac, t, 0.0)
         y += 90
