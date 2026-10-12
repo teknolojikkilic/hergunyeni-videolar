@@ -1,0 +1,23 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FFB547",
+  "source": "Kaynak: Google Chrome Yardım, Klavye kısayolları",
+  "scenes": [
+    {"type": "hook", "dur": 3.4, "kicker": "Chrome İpucu",
+     "lines": ["Yanlışlıkla kapattığın sekmeyi", "1 saniyede geri getir."]},
+    {"type": "tip", "dur": 4.6, "title": "Kapanan sekmeyi geri aç",
+     "bad": "Geçmişte tek tek aramak", "good": "Ctrl + Shift + T"},
+    {"type": "text", "dur": 4.2, "kicker": "Daha fazlası",
+     "title": "Basmaya devam et",
+     "body": "Sekmeler kapattığın sırayla tek tek geri gelir. Mac'te: Cmd + Shift + T."},
+    {"type": "text", "dur": 5.0, "kicker": "Sekmeler arasında hızlan",
+     "title": "Fareye gerek yok",
+     "body": "Ctrl + L: adres çubuğu\nCtrl + 1-8: o sıradaki sekme\nCtrl + 9: en sağdaki sekme"},
+    {"type": "text", "dur": 5.0, "kicker": "Bir de bunlar",
+     "title": "Gizli pencere ve indirilenler",
+     "body": "Ctrl + Shift + N: gizli pencere\nCtrl + J: indirilenler\nCtrl + H: geçmiş"},
+    {"type": "cta", "dur": 4.0,
+     "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
