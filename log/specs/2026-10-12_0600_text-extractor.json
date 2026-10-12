@@ -1,0 +1,23 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FFB547",
+  "source": "Kaynak: Microsoft Learn, PowerToys belgeleri",
+  "scenes": [
+    {"type": "hook", "dur": 3.4, "kicker": "Ücretsiz Windows Aracı",
+     "lines": ["Kopyalanamayan yazıyı", "tek kısayolla kopyala."]},
+    {"type": "text", "dur": 4.4, "kicker": "Sorun",
+     "title": "Resimdeki yazı seçilmiyor",
+     "body": "Ekran görüntüsü, video, kilitli PDF... Metni elle yeniden yazmak zorunda kalıyorsun."},
+    {"type": "text", "dur": 4.6, "kicker": "Çözüm: PowerToys",
+     "title": "Text Extractor özelliği",
+     "body": "Microsoft'un ücretsiz ve açık kaynak PowerToys paketinde. Ekrandaki yazıyı OCR ile okuyup panoya kopyalar."},
+    {"type": "tip", "dur": 4.8, "title": "Nasıl kullanılır?",
+     "bad": "Resme bakıp metni tek tek yaz", "good": "Win + Shift + T, alanı seç, yapıştır"},
+    {"type": "text", "dur": 4.6, "kicker": "Bilmen gerekenler",
+     "title": "Shift ile alanı taşı, Esc ile çık",
+     "body": "Sadece OCR dil paketi yüklü dilleri tanır. Sonuç kusursuz olmayabilir; yapıştırınca bir göz at."},
+    {"type": "cta", "dur": 4.0,
+     "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
