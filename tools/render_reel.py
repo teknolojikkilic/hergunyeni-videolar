@@ -17,6 +17,7 @@ spec.json:
     {"type": "myth",  "dur": 3.8, "myth": "yanlış bilinen", "fact": "doğrusu"},
     {"type": "list",  "dur": 4.0, "kicker": "...", "title": "...", "items": ["...", "...", "..."]},
     {"type": "repo",  "dur": 4.0, "title": "...", "name": "sahip/repo", "desc": "...", "stars": "48,2 bin", "tags": ["Python", "MIT"]},
+    {"type": "repo",  "dur": 4.0, "title": "Günün Yapay Zekâ Aracı", "name": "araç adı / site.com", "desc": "...", "badge": "Ücretsiz", "tags": ["Web", "Türkçe"]},   # araç kartı: stars yerine badge
     {"type": "stat",  "dur": 4.5, "title": "...", "bars": [{"label": "...", "value": 73}, {"label": "...", "value": 57, "hi": true}], "note": "..."},
     {"type": "tip",   "dur": 4.5, "title": "...", "bad": "...", "good": "..."},
     {"type": "cta",   "dur": 3.5, "lines": ["...", "..."], "sub": "..."}
@@ -262,8 +263,8 @@ def scene_repo(L, sc, t, ac):
         yy += 62
     yy += 40
     xx = X0 + 40
-    if sc.get("stars"):
-        txt = "★ " + sc["stars"]
+    if sc.get("stars") or sc.get("badge"):
+        txt = ("★ " + sc["stars"]) if sc.get("stars") else sc["badge"]
         tw = ld.textlength(txt, font=sym)
         ld.rounded_rectangle([xx, yy, xx + tw + 40, yy + 64], 32, fill=(255, 181, 71, 255))
         ld.text((xx + 20, yy + 32), txt, font=sym, fill=(20, 16, 6, 255), anchor="lm")
