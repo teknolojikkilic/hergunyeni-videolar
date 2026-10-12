@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FFB547",
+  "source": "Kaynak: CERN; Centre for Computing History",
+  "music": "gizem",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🌐", "kicker": "İnternet tarihi", "lines": ["Dünyanın ilk web sitesi", "hâlâ açık!"]},
+    {"type": "text", "dur": 3.6, "emoji": "🔗", "kicker": "Adresi", "title": "info.cern.ch", "body": "Tim Berners-Lee, CERN'de 1991'de yayına aldı. CERN 2013'te sayfayı yeniden canlandırdı."},
+    {"type": "text", "dur": 3.6, "emoji": "🖥️", "kicker": "İlk sunucu", "title": "Steve Jobs'un şirketinden", "body": "Bir NeXT bilgisayardı. NeXT'i Steve Jobs, Apple'dan ayrılınca kurmuştu. Apple sonra NeXT'i satın aldı."},
+    {"type": "text", "dur": 3.4, "emoji": "✍️", "kicker": "Üstündeki el yazısı not", "title": "\"KAPATMAYIN!!\"", "body": "Kırmızı mürekkeple: \"Bu makine bir sunucu. KAPATMAYIN!!\""},
+    {"type": "text", "dur": 3.6, "emoji": "🎁", "kicker": "En büyük hediye", "title": "Web herkese bedava verildi", "body": "CERN, 30 Nisan 1993'te web yazılımını kamu malı yaptı. İsteyen ücretsiz kullanabildi."},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
