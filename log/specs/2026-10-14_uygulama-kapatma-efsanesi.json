@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FFB547",
+  "source": "Kaynak: Apple Destek; Google ve Apple yöneticileri, 2016",
+  "music": "gizem",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🔋", "kicker": "Yanlış Bilinen", "lines": ["Uygulamaları kapatmak", "pili korumuyor"]},
+    {"type": "myth", "dur": 3.8, "myth": "Arka plandaki uygulamaları kaydırıp kapat, pil uzasın.", "fact": "Telefon onları zaten askıya alıyor. Kapatmak pil kazandırmıyor."},
+    {"type": "text", "dur": 3.6, "emoji": "🍎", "kicker": "Apple Destek", "title": "Sadece donunca kapat", "body": "Apple: Bir uygulamayı yalnızca yanıt vermiyorsa zorla kapatmalısın."},
+    {"type": "text", "dur": 3.8, "emoji": "🤖", "kicker": "Google ve Apple yöneticileri", "title": "Cevap: Hayır", "body": "Federighi: Pil için kapatmak gerekmiyor. Lockheimer: Sistem bunu senin yerine yönetiyor."},
+    {"type": "tip", "dur": 3.8, "title": "Ne yapmalı?", "bad": "Her gün tüm uygulamaları kaydırıp kapatmak", "good": "Sadece donan ya da takılan uygulamayı kapat"},
+    {"type": "cta", "dur": 3.0, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}

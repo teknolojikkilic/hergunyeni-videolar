@@ -1,14 +1,13 @@
 # Günlük analiz
 
-## SAAT ANALİZİ (13 Ekim 2026, elle) — 07:40-08:30 mı, 16:30-17:10 mu?
+## SAAT ANALİZİ (14 Ekim 2026 07:06, otomatik) — 07:40-08:30 mı, 16:30-17:10 mu?
 
 Kullanıcı kararı (13 Ekim): Ekim sonuna kadar Reels'leri kullanıcı ELLE atıyor; görev her sabah videoyu ona teslim ediyor. Aday iki pencere: SABAH 07:40-08:30, AKŞAM 16:30-17:10. 1 Kasım'dan itibaren otomatik görev bu bölümdeki "GÜNCEL KARAR" penceresinde paylaşır.
 
-Veri (Metricool IGRE, 13 Ekim 08:20 itibarıyla; saatler İstanbul):
-- Sabah penceresine yakın: 08:03 15 yaş yasağı 30 izlenme; 08:31 kampanya 121; 08:35 gizli sekme 125.
-- Akşam penceresine yakın: 16:14 megapiksel 62 (daha yeni, ~16 saatlik); 17:23 reCAPTCHA yayınlanmadı (limit).
-- Diğer saatler genelde 110-140 izlenme bandında; en yüksek 01:12 LocalSend 284, 13:03 şarj efsanesi 237. İzlenmeyi şu an saatten çok konu belirliyor.
-- Sonuç: iki pencereyi karşılaştırmak için veri YETERSİZ. Test planı: çift günler SABAH, tek günler AKŞAM. Her pencerede en az 3 paylaşım (24 saatten eski) olunca ortalama izlenmesi yüksek olan seçilir.
+Veri: Metricool IGRE, son 21 gün, saatler İstanbul (UTC+3), ±5 dk tolerans, son 24 saatin Reels'leri hariç.
+- SABAH: 3 paylaşım (12 Ekim 08:03 / 08:31 / 08:35) — ort. izlenme 93,7, ort. erişim 86,3, kaydetme+paylaşım 4. (13 Ekim 08:29 Napkin AI 111 izlenme, 24 saatten yeni → sayılmadı.)
+- AKŞAM: 0 paylaşım (16:14 megapiksel pencere dışı; 13 Ekim reCAPTCHA 19:29'da atılmış, pencere dışı).
+- Sonuç: AKŞAM'da veri yok, test sürüyor. 14 Ekim çift gün → SABAH 08:05.
 
 GÜNCEL KARAR: test sürüyor (varsayılan SABAH 08:05)
 
