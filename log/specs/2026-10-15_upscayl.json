@@ -1,0 +1,67 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#8B7BFF",
+  "source": "Kaynak: github.com/upscayl/upscayl, TechSpot, Ekim 2026",
+  "music": "enerjik",
+  "scenes": [
+    {
+      "type": "hook",
+      "dur": 2.8,
+      "emoji": "🔍",
+      "kicker": "Ücretsiz ve açık kaynak",
+      "lines": [
+        "Küçük fotoğrafı",
+        "yapay zekâyla büyüt"
+      ]
+    },
+    {
+      "type": "repo",
+      "dur": 4.0,
+      "title": "GitHub'da 50 bin+ yıldız",
+      "name": "upscayl/upscayl",
+      "desc": "Düşük çözünürlüklü görseli yapay zekâyla büyütür. Windows, macOS ve Linux'ta çalışır.",
+      "stars": "50 bin+",
+      "tags": [
+        "AGPL-3.0",
+        "Ücretsiz"
+      ]
+    },
+    {
+      "type": "list",
+      "dur": 3.8,
+      "kicker": "Neden güzel?",
+      "title": "Bulutsuz, sınırsız",
+      "items": [
+        "Fotoğraf bilgisayarında işlenir",
+        "İnternet gerekmiyor",
+        "Görsel sayısı sınırı yok",
+        "Toplu işlem yapabiliyor"
+      ]
+    },
+    {
+      "type": "text",
+      "dur": 3.4,
+      "emoji": "⚠️",
+      "kicker": "Bilmen gereken",
+      "title": "Vulkan destekli ekran kartı şart",
+      "body": "Sadece işlemciyle çalışmıyor. Bazı dahili ekran kartları da desteklenmiyor."
+    },
+    {
+      "type": "text",
+      "dur": 3.2,
+      "emoji": "🎯",
+      "kicker": "Mucize değil",
+      "title": "Odak dışı fotoğrafı düzeltmez",
+      "body": "Çözünürlüğü artırır; eksik detayı yapay zekâ tahmin eder."
+    },
+    {
+      "type": "cta",
+      "dur": 2.8,
+      "lines": [
+        "İşine yaradıysa kaydet.",
+        "Her gün yenisi için takip et."
+      ],
+      "sub": "@hergunyeni_teknoloji"
+    }
+  ]
+}
