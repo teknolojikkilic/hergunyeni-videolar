@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#3DE0FF",
+  "source": "Kaynak: Bluetooth SIG (bluetooth.com)",
+  "music": "gizem",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🦷", "kicker": "İlginç Bilgi", "lines": ["Bluetooth adını", "bir Viking kralından aldı"]},
+    {"type": "text", "dur": 3.6, "emoji": "👑", "kicker": "Kral Harald Blåtand", "title": "Lakabı: Mavi Diş", "body": "958'de Danimarka ve Norveç'i birleştirdi. Rivayete göre koyu renkli ölü bir dişi vardı."},
+    {"type": "text", "dur": 3.8, "emoji": "💡", "kicker": "1996, Intel", "title": "Sadece geçici kod adıydı", "body": "Jim Kardach: Harald İskandinavya'yı birleştirdi, biz de bilgisayar ve telefonu birleştireceğiz."},
+    {"type": "list", "dur": 4.2, "kicker": "Neden kalıcı oldu?", "title": "Asıl adaylar başkaydı", "items": ["PAN: internette çok yaygındı", "RadioWire: marka araştırması yetişmedi", "Geriye tek seçenek kaldı"]},
+    {"type": "text", "dur": 3.6, "emoji": "🔣", "kicker": "Logodaki sır", "title": "Kralın baş harfleri", "body": "Logo, Hagall (H) ve Bjarkan (B) rünlerinin tek sembolde birleşmiş hâli."},
+    {"type": "cta", "dur": 3.0, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}

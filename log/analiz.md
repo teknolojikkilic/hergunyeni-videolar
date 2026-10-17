@@ -1,14 +1,14 @@
 # Günlük analiz
 
-## SAAT ANALİZİ (16 Ekim 2026 07:05, otomatik) — 07:40-08:30 mı, 16:30-17:10 mu?
+## SAAT ANALİZİ (17 Ekim 2026 07:05, otomatik) — 07:40-08:30 mı, 16:30-17:10 mu?
 
 Kullanıcı kararı (13 Ekim): Ekim sonuna kadar Reels'leri kullanıcı ELLE atıyor; görev her sabah videoyu ona teslim ediyor. Aday iki pencere: SABAH 07:40-08:30, AKŞAM 16:30-17:10. 1 Kasım'dan itibaren otomatik görev bu bölümdeki "GÜNCEL KARAR" penceresinde paylaşır.
 
 Veri: Metricool IGRE, son 21 gün, saatler İstanbul (UTC+3), ±5 dk tolerans, son 24 saatin Reels'leri hariç.
-- SABAH: 4 paylaşım (12 Ekim 08:03 / 08:31 / 08:35, 13 Ekim 08:29) — ort. izlenme 101,3, ort. erişim 91,0, kaydetme+paylaşım 5.
+- SABAH: 4 paylaşım (12 Ekim 08:03 / 08:31 / 08:35, 13 Ekim 08:29) — ort. izlenme 101,8, ort. erişim 91,2, kaydetme+paylaşım 5.
 - AKŞAM: 0 paylaşım.
-- Not: 14 Ekim (uygulama kapatma) ve 15 Ekim (Upscayl) teslim edilen Reels'ler Metricool verisinde görünmüyor (paylaşılmamış ya da veri gelmemiş olabilir). Son görünen Reels: 13 Ekim 19:29.
-- Sonuç: AKŞAM'da veri yok, test sürüyor. 16 Ekim çift gün → SABAH 08:05.
+- Not: 16 Ekim 08:18 Gamma Reels'i paylaşılmış (83 izlenme, 76 erişim) ama son 24 saatte olduğu için sayılmadı. 14 Ekim ve 15 Ekim (AKŞAM testi, Upscayl) teslimleri Metricool verisinde görünmüyor.
+- Sonuç: AKŞAM'da veri yok, test sürüyor. 17 Ekim tek gün → AKŞAM 16:50.
 
 GÜNCEL KARAR: test sürüyor (varsayılan SABAH 08:05)
 
