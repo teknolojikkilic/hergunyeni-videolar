@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FF6B9D",
+  "source": "Kaynak: LawSites, ABC News (2023), Mata - Avianca davası",
+  "music": "enerjik",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "⚖️", "kicker": "Yapay Zekâ", "lines": ["ChatGPT mahkemeye", "6 sahte dava uydurdu"]},
+    {"type": "text", "dur": 3.6, "emoji": "✈️", "kicker": "New York, 2023", "title": "Avukat ChatGPT'den emsal istedi", "body": "Avianca havayolu davası için sunduğu kararların en az 6'sı hiç yaşanmamış davalardı."},
+    {"type": "text", "dur": 3.8, "emoji": "🤖", "kicker": "Kontrol etti mi?", "title": "Sordu: Bu dava gerçek mi?", "body": "ChatGPT: \"Evet, gerçek bir dava. Westlaw ve LexisNexis'te bulunabilir.\""},
+    {"type": "text", "dur": 3.6, "emoji": "💸", "kicker": "Haziran 2023", "title": "Hâkim 5.000 dolar ceza kesti", "body": "İki avukat ve hukuk bürosu birlikte cezalandırıldı."},
+    {"type": "list", "dur": 4.2, "kicker": "Sen ne yapmalısın?", "title": "Yapay zekâ kaynak verince", "items": ["Kaynağı kendin aç", "Başka yerden doğrula", "Emin değilsen kullanma"]},
+    {"type": "cta", "dur": 3.0, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
