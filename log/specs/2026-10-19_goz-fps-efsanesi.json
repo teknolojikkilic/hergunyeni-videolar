@@ -1,0 +1,60 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#8B7BFF",
+  "source": "Kaynak: Davis ve ark., Scientific Reports, 2015",
+  "music": "gizem",
+  "scenes": [
+    {
+      "type": "hook",
+      "dur": 2.8,
+      "emoji": "👁️",
+      "kicker": "Yanlış Bilinen",
+      "lines": [
+        "Göz 30 FPS'ten",
+        "fazlasını göremez mi?"
+      ]
+    },
+    {
+      "type": "myth",
+      "dur": 3.8,
+      "myth": "İnsan gözü saniyede 30 kareden fazlasını fark edemez.",
+      "fact": "Deneyde insanlar 500 Hz'in üstündeki titremeyi bile fark etti."
+    },
+    {
+      "type": "text",
+      "dur": 3.6,
+      "emoji": "💡",
+      "kicker": "Düz ışıkta",
+      "title": "Titreme ~65 Hz'de kaybolur",
+      "body": "Kenarsız, düz bir ışıkta göz titremeyi yaklaşık 65 Hz'den sonra seçemez."
+    },
+    {
+      "type": "text",
+      "dur": 3.8,
+      "emoji": "🔬",
+      "kicker": "Ama kenarlı görüntüde",
+      "title": "500 Hz'in üstü fark edildi",
+      "body": "2015 deneyinde 10 kişi, keskin kenarlı görüntüde 500 Hz'den hızlı titremeyi gördü."
+    },
+    {
+      "type": "list",
+      "dur": 4.0,
+      "kicker": "Neden?",
+      "title": "Göz hiç durmuyor",
+      "items": [
+        "Göz bilinçsizce hızla sıçrıyor",
+        "Bakış kenarlar üzerinden kayıyor",
+        "Araştırmacılara göre sebep bu"
+      ]
+    },
+    {
+      "type": "cta",
+      "dur": 3.0,
+      "lines": [
+        "İşine yaradıysa kaydet.",
+        "Her gün yenisi için takip et."
+      ],
+      "sub": "@hergunyeni_teknoloji"
+    }
+  ]
+}
