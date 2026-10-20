@@ -1,0 +1,20 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#4ADE80",
+  "source": "Kaynak: github.com/ollama/ollama, ollama.com blog, Ekim 2026",
+  "music": "enerjik",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🤖", "kicker": "Ücretsiz ve açık kaynak",
+     "lines": ["Yapay zekâyı kendi", "bilgisayarında çalıştır"]},
+    {"type": "repo", "dur": 4.0, "title": "GitHub'da 170 bin+ yıldız", "name": "ollama/ollama",
+     "desc": "Açık yapay zekâ modellerini kendi bilgisayarında çalıştırır. macOS, Windows ve Linux.",
+     "stars": "170 bin+", "tags": ["MIT", "Ücretsiz"]},
+    {"type": "list", "dur": 3.8, "kicker": "Neler yapıyor?", "title": "Uygulamadan sohbet et",
+     "items": ["Gemma gibi açık modeller", "PDF ve metin dosyası okur", "Görsel anlayan modeller", "Yerel modelde veri sende"]},
+    {"type": "text", "dur": 3.4, "emoji": "⚠️", "kicker": "Bilmen gereken", "title": "Büyük model, güçlü bilgisayar ister",
+     "body": "Bellek ne kadar çoksa o kadar rahat. Bulut modelleri ise internetten çalışır."},
+    {"type": "text", "dur": 3.2, "emoji": "⬇️", "kicker": "Nasıl başlarım?", "title": "ollama.com'dan indir",
+     "body": "Uygulamayı aç, bir model seç ve yazmaya başla."},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
