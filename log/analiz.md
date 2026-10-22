@@ -1,14 +1,14 @@
 # Günlük analiz
 
-## SAAT ANALİZİ (21 Ekim 2026 07:05, otomatik) — 07:40-08:30 mı, 16:30-17:10 mu?
+## SAAT ANALİZİ (22 Ekim 2026 07:05, otomatik) — 07:40-08:30 mı, 16:30-17:10 mu?
 
 Kullanıcı kararı (13 Ekim): Ekim sonuna kadar Reels'leri kullanıcı ELLE atıyor; görev her sabah videoyu ona teslim ediyor. Aday iki pencere: SABAH 07:40-08:30, AKŞAM 16:30-17:10. 1 Kasım'dan itibaren otomatik görev bu bölümdeki "GÜNCEL KARAR" penceresinde paylaşır.
 
 Veri: Metricool IGRE, son 21 gün, saatler İstanbul (UTC+3), ±5 dk tolerans, son 24 saatin Reels'leri hariç.
 - SABAH: 5 paylaşım (12 Ekim 08:03 / 08:31 / 08:35, 13 Ekim 08:29, 16 Ekim 08:18) — ort. izlenme 99,2, ort. erişim 89,4, kaydetme+paylaşım 5.
 - AKŞAM: 0 paylaşım.
-- Not: 18 Ekim Reels'i (ChatGPT sahte davalar) veride 09:43'te paylaşılmış görünüyor (133 izlenme, 117 erişim) — iki pencerenin de dışında. 19 ve 20 Ekim teslimleri Metricool verisinde henüz yok.
-- Sonuç: AKŞAM'da veri yok, test sürüyor. 21 Ekim tek gün → AKŞAM 16:50.
+- Not: 21 Ekim Reels'i (Adobe Enhance Speech) 07:50'de paylaşılmış (121 izlenme, 111 erişim; 24 saatten yeni olduğu için hesaba katılmadı, yarın SABAH'a girecek). 18 Ekim 09:43'te (pencere dışı). 19 ve 20 Ekim teslimleri Metricool verisinde hâlâ yok. AKŞAM penceresine hiç paylaşım düşmedi.
+- Sonuç: AKŞAM'da veri yok, test sürüyor. 22 Ekim çift gün → SABAH 08:05.
 
 GÜNCEL KARAR: test sürüyor (varsayılan SABAH 08:05)
 

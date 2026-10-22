@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FFB547",
+  "source": "Kaynak: PBS NewsHour, GeekWire (2013); Mental Floss",
+  "music": "gizem",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "⌨️", "kicker": "İlginç Bilgi", "lines": ["Bill Gates'e göre", "Ctrl+Alt+Del bir hataydı"]},
+    {"type": "text", "dur": 3.6, "emoji": "👨‍💻", "kicker": "1981, IBM PC", "title": "Kimin icadı?", "body": "IBM mühendisi David Bradley, bilgisayarı hızlıca yeniden başlatmak için yazdı. Kendi deyişiyle: 5 dakikalık iş."},
+    {"type": "list", "dur": 4.2, "kicker": "Neden üç tuş?", "title": "Kazara basılmasın diye", "items": ["Delete, diğer ikisinden uzakta", "Kazara basılması çok zor", "Müşteriler için değil, yazılımcılar içindi"]},
+    {"type": "text", "dur": 3.8, "emoji": "💬", "kicker": "Harvard, 2013", "title": "Gates: “Bir hataydı”", "body": "“Tek bir tuşumuz olabilirdi ama IBM'in klavye tasarımcısı bize vermedi.”"},
+    {"type": "text", "dur": 3.8, "emoji": "😄", "kicker": "2001, IBM PC'nin 20. yılı", "title": "Bradley'nin cevabı", "body": "“Ben icat etmiş olabilirim ama bence onu Bill ünlü yaptı.”"},
+    {"type": "cta", "dur": 3.0, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
