@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FFB547",
+  "source": "Kaynak: Source NM, ABC News (21 Ekim 2026)",
+  "music": "enerjik",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "💸", "kicker": "Gündem", "lines": ["Meta'ya 25 milyar", "dolar ceza!"]},
+    {"type": "text", "dur": 3.6, "emoji": "🕵️", "kicker": "Cambridge Analytica", "title": "87 milyon profilin verisi", "body": "Bir kişilik testiyle toplanan Facebook verileri 2016'da siyasi reklamlarda kullanılmıştı."},
+    {"type": "text", "dur": 3.6, "emoji": "⚖️", "kicker": "Jüri kararı, Eylül 2026", "title": "43 milyondan fazla ihlal", "body": "New Mexico jürisi, Facebook'un kullanıcılarını gizlilik konusunda yanılttığına karar verdi."},
+    {"type": "text", "dur": 3.6, "emoji": "🤯", "kicker": "21 Ekim 2026", "title": "Ceza 220 milyar olabilirdi", "body": "Yasa ihlal başına 5.000 dolara izin veriyor. Hâkim 25 milyar dolarda durdu."},
+    {"type": "list", "dur": 4.0, "kicker": "Sırada ne var?", "title": "Davanın devamı", "items": ["Meta karara itiraz edecek", "Para eğitim fonuna gidecek", "48 eyalet önceden uzlaşmıştı"]},
+    {"type": "cta", "dur": 3.0, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
