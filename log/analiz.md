@@ -1,14 +1,14 @@
 # Günlük analiz
 
-## SAAT ANALİZİ (23 Ekim 2026 07:05, otomatik) — 07:40-08:30 mı, 16:30-17:10 mu?
+## SAAT ANALİZİ (24 Ekim 2026 07:05, otomatik) — 07:40-08:30 mı, 16:30-17:10 mu?
 
 Kullanıcı kararı (13 Ekim): Ekim sonuna kadar Reels'leri kullanıcı ELLE atıyor; görev her sabah videoyu ona teslim ediyor. Aday iki pencere: SABAH 07:40-08:30, AKŞAM 16:30-17:10. 1 Kasım'dan itibaren otomatik görev bu bölümdeki "GÜNCEL KARAR" penceresinde paylaşır.
 
 Veri: Metricool IGRE, son 21 gün, saatler İstanbul (UTC+3), ±5 dk tolerans, son 24 saatin Reels'leri hariç.
-- SABAH: 6 paylaşım (12 Ekim 08:03 / 08:31 / 08:35, 13 Ekim 08:29, 16 Ekim 08:18, 21 Ekim 07:50) — ort. izlenme 102,8, ort. erişim 93,0, kaydetme+paylaşım 6.
+- SABAH: 7 paylaşım (12 Ekim 08:03 / 08:31 / 08:35, 13 Ekim 08:29, 16 Ekim 08:18, 21 Ekim 07:50, 22 Ekim 07:52) — ort. izlenme 115,3, ort. erişim 104,0, kaydetme+paylaşım 7.
 - AKŞAM: 0 paylaşım.
-- Not: 22 Ekim Reels'i (Ctrl+Alt+Del) 07:52'de paylaşılmış (188 izlenme, 170 erişim, 1 paylaşım; 24 saatten yeni, hesaba katılmadı). 19 ve 20 Ekim teslimleri Metricool verisinde hâlâ yok. AKŞAM penceresine hiç paylaşım düşmedi.
-- Sonuç: AKŞAM'da veri yok, test sürüyor. 23 Ekim tek gün → bugün AKŞAM 16:50 önerildi.
+- Not: 23 Ekim Reels'i (Meta 25 milyar ceza) AKŞAM önerilmesine rağmen 08:14'te paylaşılmış (140 izlenme, 127 erişim; 24 saatten yeni, hesaba katılmadı). 19 ve 20 Ekim teslimleri Metricool verisinde yok.
+- Sonuç: AKŞAM'da veri yok, test sürüyor. 24 Ekim çift gün → bugün SABAH 08:05 önerildi.
 
 GÜNCEL KARAR: test sürüyor (varsayılan SABAH 08:05)
 

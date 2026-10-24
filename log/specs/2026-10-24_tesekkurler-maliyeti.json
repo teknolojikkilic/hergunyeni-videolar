@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FFB547",
+  "source": "Kaynak: The Register, Altman blog, Google (2025)",
+  "music": "enerjik",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🙏", "kicker": "Yapay Zekâ", "lines": ["ChatGPT'ye \"teşekkürler\" demek", "milyonlara mal oluyor"]},
+    {"type": "text", "dur": 3.6, "emoji": "💸", "kicker": "Nisan 2025, X", "title": "Altman: \"On milyonlarca dolar\"", "body": "Bir kullanıcı nezaket mesajlarının elektrik maliyetini sordu. Altman: \"İyi harcanmış on milyonlarca dolar.\""},
+    {"type": "text", "dur": 3.8, "emoji": "⚡", "kicker": "Tek soru ne harcar?", "title": "ChatGPT: soru başına 0,34 Wh", "body": "Altman'a göre bir fırının 1 saniyeden biraz fazla çalışması kadar. Su: yaklaşık 0,3 mL."},
+    {"type": "text", "dur": 3.8, "emoji": "💧", "kicker": "Google'ın ölçümü, Ağustos 2025", "title": "Gemini: 9 saniye TV kadar", "body": "Ortanca metin istemi 0,24 Wh ve 5 damla su (0,26 mL). Bir yılda enerji 33 kat azaldı."},
+    {"type": "list", "dur": 4.2, "kicker": "PEKİ SORUN NE?", "title": "Tek soru az, toplamı çok", "items": ["Tek istem: saniyelik enerji", "Günde 2,5 milyar istem (2025)", "Nezaket serbest, gereksiz tekrar değil"]},
+    {"type": "cta", "dur": 3.0, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
