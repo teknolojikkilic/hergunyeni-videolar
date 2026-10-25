@@ -1,0 +1,60 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FFB547",
+  "source": "Kaynak: Microsoft Learn ve Microsoft Destek (KB4495263)",
+  "music": "gizem",
+  "scenes": [
+    {
+      "type": "hook",
+      "dur": 2.8,
+      "emoji": "🔌",
+      "kicker": "Yanlış Bilinen",
+      "lines": [
+        "USB'de \"güvenle kaldır\"",
+        "şart mı?"
+      ]
+    },
+    {
+      "type": "myth",
+      "dur": 3.8,
+      "myth": "Flash belleği \"Donanımı güvenle kaldır\" demeden çekersen dosyaların bozulur.",
+      "fact": "Windows 10 (1809) ve Windows 11'de varsayılan ayar \"Hızlı kaldırma\"."
+    },
+    {
+      "type": "text",
+      "dur": 3.6,
+      "emoji": "💡",
+      "kicker": "Neden?",
+      "title": "Windows yazmayı bekletmiyor",
+      "body": "Hızlı kaldırmada Windows yazma işlemlerini önbelleğe almaz. Sürücü her an çıkarılmaya hazır kalır."
+    },
+    {
+      "type": "text",
+      "dur": 3.6,
+      "emoji": "⚠️",
+      "kicker": "Ama dikkat",
+      "title": "\"Daha iyi performans\" seçiliyse",
+      "body": "Bu ayarda Windows yazmayı önbelleğe alır. Güvenle kaldırmadan çekersen veri kaybedebilirsin."
+    },
+    {
+      "type": "list",
+      "dur": 4.0,
+      "kicker": "Kontrol et",
+      "title": "Ayarın nerede?",
+      "items": [
+        "Disk Yönetimi'ni aç",
+        "Sürücüye sağ tık > Özellikler",
+        "İlkeler sekmesine bak"
+      ]
+    },
+    {
+      "type": "cta",
+      "dur": 3.0,
+      "lines": [
+        "İşine yaradıysa kaydet.",
+        "Her gün yenisi için takip et."
+      ],
+      "sub": "@hergunyeni_teknoloji"
+    }
+  ]
+}
