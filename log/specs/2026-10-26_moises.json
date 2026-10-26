@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FF6B9D",
+  "source": "Kaynak: Moises Yardım Merkezi ve App Store, Ekim 2026",
+  "music": "enerjik",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🎤", "kicker": "Yapay Zekâ Aracı", "lines": ["Her şarkıdan vokali", "tek tıkla ayır"]},
+    {"type": "repo", "dur": 4.0, "title": "Günün Yapay Zekâ Aracı", "name": "Moises", "desc": "Şarkıyı yükle; yapay zekâ vokali ve enstrümanları ayrı kanallara ayırsın.", "badge": "Ücretsiz plan", "tags": ["Web", "Mobil"]},
+    {"type": "list", "dur": 4.0, "kicker": "Ne yapıyor?", "title": "Şarkıyı parçalarına ayırır", "items": ["Vokali ya da müziği ayırır", "Davul ve bası ayırır", "Akorları gösterir", "Ton ve hızı değiştirir"]},
+    {"type": "text", "dur": 3.6, "emoji": "🎁", "kicker": "Ücretsiz planda", "title": "Ayda 5 şarkı", "body": "Dosya başına 5 dakikaya kadar; vokal, davul, bas ve diğer olarak 4 kanala ayırır."},
+    {"type": "text", "dur": 3.4, "emoji": "⚠️", "kicker": "Bilmen gereken", "title": "Telifli şarkıyı yeniden yayınlama", "body": "Ayırdığın kanalları pratik ve kişisel çalışma için kullan; sayaç her ay başı sıfırlanır."},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
