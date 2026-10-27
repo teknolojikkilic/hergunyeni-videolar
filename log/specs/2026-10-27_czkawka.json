@@ -1,0 +1,20 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#3DE0FF",
+  "source": "Kaynak: github.com/qarmin/czkawka, Ekim 2026",
+  "music": "enerjik",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🗂️", "kicker": "Ücretsiz ve açık kaynak",
+     "lines": ["Diskini dolduran", "kopya dosyaları bul"]},
+    {"type": "repo", "dur": 4.0, "title": "GitHub'da 34 bin+ yıldız", "name": "qarmin/czkawka",
+     "desc": "Kopya dosyaları, benzer fotoğrafları ve gereksiz dosyaları bulup temizlemene yardım eder.",
+     "stars": "34 bin+", "tags": ["MIT", "Ücretsiz"]},
+    {"type": "list", "dur": 4.0, "kicker": "Neler buluyor?", "title": "Tek uygulamada 14 araç",
+     "items": ["Aynı ve benzer fotoğraflar", "Benzer videolar, aynı şarkılar", "Büyük ve boş dosyalar", "Bozuk dosyalar, boş klasörler"]},
+    {"type": "text", "dur": 3.4, "emoji": "🔒", "kicker": "Neden güvenilir?", "title": "Reklam yok, internete bağlanmıyor",
+     "body": "Geliştiricisine göre veri toplamıyor. Windows, macOS, Linux ve Android'de çalışıyor."},
+    {"type": "text", "dur": 3.4, "emoji": "⚠️", "kicker": "Bilmen gereken", "title": "Silmeden önce listeyi kontrol et",
+     "body": "Resmi web sitesi yok, sadece GitHub'dan indir. Yeni arayüzün adı Krokiet."},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
