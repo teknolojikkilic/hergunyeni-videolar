@@ -1,0 +1,24 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#8B7BFF",
+  "source": "Kaynak: Phil Belanger (Boing Boing, 2005); Mental Floss; TechRadar",
+  "music": "gizem",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "📶", "kicker": "Yanlış Bilinen",
+     "lines": ["Wi-Fi'ın açılımı", "aslında yok!"]},
+    {"type": "myth", "dur": 3.8,
+     "myth": "Wi-Fi, \"Wireless Fidelity\" (kablosuz sadakat) ifadesinin kısaltmasıdır.",
+     "fact": "Wi-Fi bir kısaltma değil, bir pazarlama adı."},
+    {"type": "text", "dur": 3.6, "emoji": "🏷️", "kicker": "Nereden çıktı?",
+     "title": "Bir marka ajansı buldu",
+     "body": "Teknolojinin asıl adı \"IEEE 802.11b Direct Sequence\" idi. Interbrand akılda kalan bir isim önerdi."},
+    {"type": "text", "dur": 3.6, "emoji": "🤦", "kicker": "Peki o açılım?",
+     "title": "Sonradan eklenen bir slogan",
+     "body": "Yönetim kurulu \"The Standard for Wireless Fidelity\" sloganını ekledi. Herkes bunu açılım sandı."},
+    {"type": "text", "dur": 3.4, "emoji": "💬", "kicker": "Kurucu üye Phil Belanger",
+     "title": "\"Wi-Fi hiçbir şeyin kısaltması değil.\"",
+     "body": "\"Bir kısaltma değil. Hiçbir anlamı yok.\" Slogan için de \"Bu bir hataydı\" dedi."},
+    {"type": "cta", "dur": 3.0, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
