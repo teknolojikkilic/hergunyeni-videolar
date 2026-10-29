@@ -1,0 +1,23 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#4ADE80",
+  "source": "Kaynak: SCMP/AFP (2021); Telecoms.com; CBC (2017); Mic",
+  "music": "gizem",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "💬", "kicker": "İlginç Bilgi",
+     "lines": ["Dünyanın ilk SMS'i", "107 bin euroya satıldı!"]},
+    {"type": "text", "dur": 3.6, "emoji": "🎄", "kicker": "3 Aralık 1992",
+     "title": "Mesaj sadece 2 kelimeydi",
+     "body": "Vodafone mühendisi Neil Papworth, iş arkadaşı Richard Jarvis'e \"Merry Christmas\" yazdı."},
+    {"type": "text", "dur": 3.6, "emoji": "💻", "kicker": "Telefondan değil",
+     "title": "Bilgisayardan gönderildi",
+     "body": "22 yaşındaki Papworth klavyeden yazdı. Jarvis'in Orbitel telefonu cevap bile veremiyordu."},
+    {"type": "list", "dur": 4.0, "kicker": "Peki sonra?", "title": "İki kelimelik dev iz",
+     "items": ["Bir yıl içinde Nokia telefonlarına geldi", "2021'de NFT olarak açık artırmada", "Gelir BM Mülteci Ajansı'na gitti"]},
+    {"type": "text", "dur": 3.4, "emoji": "👍", "kicker": "Neil Papworth",
+     "title": "\"Hiç de tarihi bir an gibi gelmedi.\"",
+     "body": "Mesajın ulaştığını arkadaşlarının başparmak işaretinden anladı."},
+    {"type": "cta", "dur": 3.0, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
