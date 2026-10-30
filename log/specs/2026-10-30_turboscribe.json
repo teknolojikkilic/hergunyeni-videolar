@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#4ADE80",
+  "source": "Kaynak: turboscribe.ai resmi sitesi, Ekim 2026",
+  "music": "enerjik",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🎧", "kicker": "Yapay Zekâ Aracı", "lines": ["Ders kaydını otomatik", "yazıya dök"]},
+    {"type": "repo", "dur": 4.0, "title": "Günün Yapay Zekâ Aracı", "name": "TurboScribe / turboscribe.ai", "desc": "Ses ya da video dosyanı yükle; yapay zekâ konuşmayı yazıya çevirsin.", "badge": "Ücretsiz plan", "tags": ["Web", "Whisper"]},
+    {"type": "list", "dur": 4.0, "kicker": "Ne yapıyor?", "title": "Konuşmayı metne çevirir", "items": ["98+ dilde, Türkçe dahil", "MP3, MP4, M4A, WAV, MOV", "Word, PDF, TXT çıktısı", "SRT altyazı dosyası"]},
+    {"type": "text", "dur": 3.6, "emoji": "🎁", "kicker": "Ücretsiz planda", "title": "Günde 3 dosya", "body": "Dosya başına 30 dakikaya kadar; Google hesabıyla kaydolup hemen başlayabilirsin."},
+    {"type": "text", "dur": 3.4, "emoji": "⚠️", "kicker": "Bilmen gereken", "title": "Sonucu bir kez kontrol et", "body": "Ücretsiz dosyalar daha düşük öncelikle işlenir; özel ve gizli kayıtları yükleme."},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
