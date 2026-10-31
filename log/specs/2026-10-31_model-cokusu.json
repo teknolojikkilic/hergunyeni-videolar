@@ -1,0 +1,62 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#8B7BFF",
+  "source": "Kaynak: Shumailov ve ark., Nature (Temmuz 2024)",
+  "music": "enerjik",
+  "scenes": [
+    {
+      "type": "hook",
+      "dur": 2.8,
+      "emoji": "🐇",
+      "kicker": "Yapay Zekâ",
+      "lines": [
+        "Kilise metniyle başladı,",
+        "yapay zekâ tavşan saydı"
+      ]
+    },
+    {
+      "type": "text",
+      "dur": 3.8,
+      "emoji": "🔁",
+      "kicker": "Nature, Temmuz 2024",
+      "title": "Kendi yazısıyla eğitildi",
+      "body": "Araştırmacılar bir dil modelini, bir önceki modelin ürettiği metinlerle defalarca yeniden eğitti."
+    },
+    {
+      "type": "text",
+      "dur": 3.8,
+      "emoji": "⛪",
+      "kicker": "Başlangıç metni",
+      "title": "Ortaçağ kilise kuleleri",
+      "body": "Model, İngiltere'deki kilise kulelerinin nasıl inşa edildiğini anlatan bir metinle başladı."
+    },
+    {
+      "type": "text",
+      "dur": 3.8,
+      "emoji": "🐇",
+      "kicker": "9. nesil",
+      "title": "Cevap: renk renk tavşanlar",
+      "body": "Dokuzuncu nesil model mimariyi bıraktı; siyah kuyruklu tavşanlar ve renk renk diğerlerini sıralamaya başladı."
+    },
+    {
+      "type": "list",
+      "dur": 4.2,
+      "kicker": "BUNUN ADI: MODEL ÇÖKÜŞÜ",
+      "title": "Neden önemli?",
+      "items": [
+        "Nadir bilgiler önce kayboluyor",
+        "Cümleler tekrara dönüyor",
+        "İnsan yazısı daha değerli"
+      ]
+    },
+    {
+      "type": "cta",
+      "dur": 3.0,
+      "lines": [
+        "İşine yaradıysa kaydet.",
+        "Her gün yenisi için takip et."
+      ],
+      "sub": "@hergunyeni_teknoloji"
+    }
+  ]
+}
