@@ -1,0 +1,23 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#3DE0FF",
+  "source": "Kaynak: FCC; USA Today; CBS News; Avrupa Komisyonu",
+  "music": "gizem",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "✈️", "kicker": "Yanlış Bilinen",
+     "lines": ["Uçak modu açmazsan", "uçak düşer mi?"]},
+    {"type": "myth", "dur": 3.8,
+     "myth": "Telefon açık kalırsa uçağın sistemleri bozulur, uçak düşer.",
+     "fact": "Bir telefonun uçak kazasına yol açtığı hiç kanıtlanmadı."},
+    {"type": "text", "dur": 3.6, "emoji": "📡", "kicker": "1991 kuralı",
+     "title": "Yasak yerdeki şebeke için de",
+     "body": "ABD'de FCC'ye göre havadaki telefon, yerde geniş bir alanda mobil şebekeyi aksatabilir."},
+    {"type": "text", "dur": 3.6, "emoji": "🎧", "kicker": "Pilotlar ne diyor?",
+     "title": "Kulaklıkta vızıltı",
+     "body": "Kokpite yakın telefonlar pilot kulaklığında hafif bir vızıltı yapabiliyor. İniş ve kalkışta bu dikkat dağıtır."},
+    {"type": "list", "dur": 4.0, "kicker": "Bilmen gerekenler", "title": "Peki ne yapmalı?",
+     "items": ["Risk çok düşük, sıfır değil", "AB 2022'de uçakta 5G'ye izin verdi", "Kural havayoluna göre değişir", "Kabin ekibi ne derse uy"]},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
