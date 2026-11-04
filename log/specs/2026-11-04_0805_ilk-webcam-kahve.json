@@ -1,0 +1,23 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FFB547",
+  "source": "Kaynak: Cambridge Üniv. Bilgisayar Lab.; The Register (2001)",
+  "music": "gizem",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "☕", "kicker": "İlginç Bilgi",
+     "lines": ["İlk webcam bir", "kahve makinesini izledi"]},
+    {"type": "text", "dur": 3.6, "emoji": "🏛️", "kicker": "Cambridge, 1991",
+     "title": "Boş sürahi için kat çıkmaktan bıktılar",
+     "body": "Araştırmacılar koridordaki kahve makinesine bir kamera çevirip görüntüyü masalarındaki bilgisayara aktardı."},
+    {"type": "list", "dur": 4.0, "kicker": "XCoffee", "title": "Sistem nasıldı?",
+     "items": ["Siyah-beyaz görüntü", "Dakikada yaklaşık 3 kare", "Kurulumu bir gün sürdü"]},
+    {"type": "text", "dur": 3.6, "emoji": "🌍", "kicker": "Kasım 1993",
+     "title": "Kahve makinesi internete açıldı",
+     "body": "Görüntü web'e konunca yüz binlerce kişi izledi. Bugün dünyanın ilk webcam'i olarak anılıyor."},
+    {"type": "text", "dur": 3.6, "emoji": "💷", "kicker": "Ağustos 2001",
+     "title": "Kamera kapandı, makine satıldı",
+     "body": "Son kahve makinesi eBay'de 3.350 sterline Spiegel Online'a satıldı."},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
