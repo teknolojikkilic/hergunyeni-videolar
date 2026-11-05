@@ -1,0 +1,23 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#FF6B9D",
+  "source": "Kaynak: Microsoft Learn; Techgage; Datarecovery.com",
+  "music": "gizem",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🗑️", "kicker": "Yanlış Bilinen",
+     "lines": ["Çöp kutusunu boşalttın.", "Dosya hâlâ orada olabilir."]},
+    {"type": "myth", "dur": 3.8,
+     "myth": "Çöp kutusunu boşaltınca dosya kalıcı olarak silinir.",
+     "fact": "Windows çoğu zaman sadece o alanı 'boş' diye işaretler."},
+    {"type": "text", "dur": 3.6, "emoji": "💾", "kicker": "Microsoft'a göre",
+     "title": "Üzerine yazılana kadar diskte",
+     "body": "Alana yeni veri yazılmadıysa silinen dosya kurtarma yazılımıyla geri getirilebilir."},
+    {"type": "text", "dur": 3.6, "emoji": "⚡", "kicker": "SSD'de durum farklı",
+     "title": "TRIM veriyi temizler",
+     "body": "SSD'ler TRIM ile boşalan alanı temizler. Bu yüzden SSD'de kurtarma çoğu zaman imkânsız."},
+    {"type": "list", "dur": 4.0, "kicker": "Windows'ta iz bırakma", "title": "Boş alanı gerçekten temizle",
+     "items": ["Komut İstemi'ni aç", "cipher /w:C yaz", "Boş alanın üzerine yazılır", "Büyük diskte uzun sürer"]},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
