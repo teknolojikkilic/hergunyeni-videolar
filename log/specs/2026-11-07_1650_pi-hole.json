@@ -1,0 +1,20 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#4ADE80",
+  "source": "Kaynak: github.com/pi-hole/pi-hole, docs.pi-hole.net, Kasım 2026",
+  "music": "enerjik",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🛡️", "kicker": "Ücretsiz ve açık kaynak",
+     "lines": ["Evdeki tüm cihazlarda", "reklamı tek yerden engelle"]},
+    {"type": "repo", "dur": 4.0, "title": "GitHub'da 61 bin+ yıldız", "name": "pi-hole/pi-hole",
+     "desc": "Ağındaki her cihaz için reklam ve takip adreslerini engelleyen bir DNS \"kara deliği\".",
+     "stars": "61 bin+", "tags": ["EUPL-1.2", "Ücretsiz"]},
+    {"type": "list", "dur": 4.0, "kicker": "Nasıl çalışıyor?", "title": "Cihazlara uygulama kurmadan",
+     "items": ["Modemde DNS olarak tanımlarsın", "Reklam adreslerini kara deliğe atar", "Telefon, tablet, akıllı TV korunur", "Panelden tüm trafiği izlersin"]},
+    {"type": "text", "dur": 3.4, "emoji": "🧰", "kicker": "Ne gerekiyor?", "title": "Raspberry Pi ya da Linux cihaz",
+     "body": "512 MB RAM ve 2 GB alan yetiyor. Doğrudan ya da Docker ile kurulur; sabit IP gerekir."},
+    {"type": "text", "dur": 3.4, "emoji": "⚠️", "kicker": "Bilmen gereken", "title": "YouTube reklamlarını engelleyemez",
+     "body": "YouTube reklamları videoyla aynı adreslerden geliyor. Kendi DNS'ini ya da VPN kullanan cihazlar da onu atlar."},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
