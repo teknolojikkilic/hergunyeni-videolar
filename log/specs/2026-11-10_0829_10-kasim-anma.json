@@ -1,0 +1,13 @@
+{
+  "brand": "10 KASIM 1938",
+  "accent": "#E30A17",
+  "source": "",
+  "music": "none",
+  "scenes": [
+    {"type": "hook", "dur": 3.5, "emoji": "🇹🇷", "kicker": "10 Kasım", "lines": ["Saat 09.05", "Unutmadık."]},
+    {"type": "text", "dur": 5.0, "emoji": "🕯️", "kicker": "88 yıl önce bugün", "title": "Atatürk'ü kaybettik", "body": "10 Kasım 1938'de saat 09.05'te İstanbul'da, Dolmabahçe Sarayı'nda hayata gözlerini yumdu."},
+    {"type": "text", "dur": 5.0, "emoji": "🚨", "kicker": "Bugün saat 09.05'te", "title": "Hayat bir an duruyor", "body": "Sirenler çalıyor, tüm Türkiye saygı duruşunda bulunuyor."},
+    {"type": "text", "dur": 6.0, "emoji": "🖤", "kicker": "Mustafa Kemal Atatürk", "title": "\"Türkiye Cumhuriyeti ilelebet payidar kalacaktır.\"", "body": "\"Benim naçiz vücudum elbet bir gün toprak olacaktır...\""},
+    {"type": "cta", "dur": 4.5, "lines": ["Saygı, rahmet ve", "minnetle anıyoruz."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
