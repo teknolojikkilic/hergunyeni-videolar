@@ -1,0 +1,14 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#4ADE80",
+  "source": "Kaynak: Cornell Lab (eBird/Merlin SSS), App Store, Kasım 2026",
+  "music": "enerjik",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🐦", "kicker": "Yapay Zekâ Aracı", "lines": ["Kuşun sesini dinlet,", "adını söylesin"]},
+    {"type": "repo", "dur": 4.0, "title": "Günün Yapay Zekâ Aracı", "name": "Merlin Bird ID / merlin.allaboutbirds.org", "desc": "Cornell Kuş Bilimi Laboratuvarı'nın uygulaması: kuşu sesinden ya da fotoğrafından yapay zekâ tanır.", "badge": "Ücretsiz", "tags": ["iOS", "Android"]},
+    {"type": "list", "dur": 4.0, "kicker": "Ne yapıyor?", "title": "Kuşlar için Shazam gibi", "items": ["2.000+ türü sesinden tanır", "Fotoğraftan tür tahmini", "Bölge paketiyle internetsiz çalışır", "Türkçe dil desteği"]},
+    {"type": "text", "dur": 3.6, "emoji": "🎧", "kicker": "Nasıl yapıyor?", "title": "Sesin resmine bakıyor", "body": "Kaydı spektrograma çevirip desenleri, Macaulay Kütüphanesi kayıtlarıyla eğitilmiş modelle eşleştiriyor."},
+    {"type": "text", "dur": 3.4, "emoji": "⚠️", "kicker": "Bilmen gereken", "title": "Her bölgede aynı değil", "body": "Ses tanıma en iyi ABD, Kanada ve Avrupa'da; bazı bölgelerde birçok türü henüz tanımayabilir."},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."], "sub": "@hergunyeni_teknoloji"}
+  ]
+}
