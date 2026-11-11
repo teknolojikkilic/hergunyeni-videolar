@@ -1,0 +1,23 @@
+{
+  "brand": "HER GÜN YENİ TEKNOLOJİ",
+  "accent": "#4ADE80",
+  "source": "Kaynak: Engelbart Institute; Computer History Museum",
+  "music": "gizem",
+  "scenes": [
+    {"type": "hook", "dur": 2.8, "emoji": "🖱️", "kicker": "İlginç Bilgi",
+     "lines": ["İlk bilgisayar faresi", "tahtadan yapılmıştı"]},
+    {"type": "text", "dur": 3.6, "emoji": "🪵", "kicker": "SRI, Kaliforniya, 1964",
+     "title": "Oyulmuş bir tahta bloğun içinde",
+     "body": "Fikir Douglas Engelbart'ındı. İlk prototipin tek tuşu ve birbirine dik iki tekerleği vardı."},
+    {"type": "text", "dur": 3.4, "emoji": "🐭", "kicker": "Neden \"fare\"?",
+     "title": "Kablosu kuyruk gibi duruyordu",
+     "body": "Engelbart'a göre adı kimin koyduğunu kimse hatırlamıyor."},
+    {"type": "list", "dur": 4.0, "kicker": "Sonrası", "title": "Fareden tarihe",
+     "items": ["1968: ünlü canlı demo", "1970: patent alındı", "Patentte \"fare\" kelimesi yok"]},
+    {"type": "text", "dur": 3.6, "emoji": "💸", "kicker": "İşin acı tarafı",
+     "title": "Mucidi hiç telif almadı",
+     "body": "Patent SRI'nındı. Engelbart'ın hatırladığına göre Apple lisansı yaklaşık 40 bin dolara aldı."},
+    {"type": "cta", "dur": 2.8, "lines": ["İşine yaradıysa kaydet.", "Her gün yenisi için takip et."],
+     "sub": "@hergunyeni_teknoloji"}
+  ]
+}
